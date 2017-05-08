@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.cloud:spring-cloud-starter-eureka:1.3.0.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-eureka/1.3.0.BUILD-SNAPSHOT/spring-cloud-starter-eureka-1.3.0.BUILD-20170320.080720-1009.jar!/" />
+    </CLASSES>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-eureka/1.3.0.BUILD-SNAPSHOT/spring-cloud-starter-eureka-1.3.0.BUILD-20170320.080720-1009-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
