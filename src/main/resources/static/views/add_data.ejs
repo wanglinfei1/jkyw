@@ -1,0 +1,47 @@
+
+<!--<header id="head">
+    <h1 class="title"><i class="icon-back"></i>添加数据</h1>
+</header>-->
+<section id="main">
+    <div class="measureZone">
+        <form onsubmit="return false"  id="addDataForm">
+            <div class="time"><label>测量时间</label>
+                <p>
+                    <img src="img/forword.png" class="more" width="7.5" height="15">
+                    <input type="text" placeholder="请选择测量时间"  name="timer" id="time-format" readonly="readonly">
+                </p>
+            </div>
+            <div class="highPressure inputPadd">
+                <label>高压值</label>
+                <p>
+                    <input type="number" placeholder="请填写您测量的高压值" name="highValue" max="999" >
+                </p>
+            </div>
+            <div class="lowPressure inputPadd">
+                <label>低压值</label>
+                <p>
+                    <input type="number" placeholder="请填写您测量的低压值" name="lowValue" >
+                </p>
+            </div>
+            <div class="heartRate inputPadd">
+                <label>心率</label>
+                <p><input type="number" placeholder="请填写您测量的心率值"  name="heartRate" ></p>
+            </div>
+            <div class="note">
+                <label>备注</label>
+            </div>
+            <p class="noteCon">
+                <textarea placeholder="选填，可以填写其他需要补充的信息"  name="Remarks"></textarea>
+            <span class="total"><i class="conMum">0</i>/<i>50</i></span>
+            </p>
+            <button type="submit" id="submit">提交</button>
+        </form>
+    </div>
+</section>
+
+<div class="mask">
+    <div class="conWrapper">
+
+    </div>
+
+</div>

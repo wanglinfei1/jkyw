@@ -1,0 +1,101 @@
+body,
+html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+}
+.clearfix:after {
+  display: block;
+  content: '.';
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bodyW #head {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -moz-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -webkit-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+}
+.bodyW #head .title {
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #06C1AE;
+}
+.bodyW #head .title .icon-close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bodyW #head .title .icon-back {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-weight: 600;
+  font-size: 24px;
+}
+body {
+  background-color: #F1F1F1;
+}
+body #head {
+  box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -moz-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -webkit-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  padding: 0 12px;
+  color: #06C1AE;
+  font-size: 20px;
+  background-color: #fff;
+}
+body #head .title {
+  position: relative;
+ /* display: -webkit-box;
+  !* OLD - iOS 6-, Safari 3.1-6 *!
+  display: -webkit-flex;
+  !* NEW - Chrome *!
+  display: flex;*/
+  height: 44px;
+  line-height: 44px;
+  /*-moz-box-pack: justify;
+  !*Firefox*!
+  -webkit-box-pack: justify;
+  !*Safari,Opera,Chrome*!
+  box-pack: justify;
+  justify-content: space-between;*/
+}
+body #head .title span {
+  display: block;
+  width:100%;
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+}
+body #head .title b {
+  position: absolute;
+  right:0;
+  top:0;
+  font-size: 15px;
+  font-weight: 600;
+}
+body #head .title .icon-back {
+  line-height: 44px;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: -6px;
+}
+body #main {
+  margin-top: 10px;
+}
+body #main input {
+  height: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 15px;
+}

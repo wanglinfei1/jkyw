@@ -1,0 +1,17 @@
+
+<% dataResult.forEach(function(data,index){ %>
+<li class="knowledge-item" data-id="<%=data.id%>">
+   <figure>
+       <img src="<%=data.smallImage%>" width="101" height="75" class="bg"/>
+       <figcaption>
+           <h2>
+               <%=data.title%>
+           </h2>
+           <div class="bottom">
+               <div class="count"><img src="img/eye.png" width="15" height="10" class="eye"><span><%=data.readCount%></span></div>
+               <div class="date"><img src="img/calendar.png" width="12" height="12"  class="calendar_1"><span><%=arrTime[index]%></span></div>
+           </div>
+       </figcaption>
+   </figure>
+</li>
+<%});%>

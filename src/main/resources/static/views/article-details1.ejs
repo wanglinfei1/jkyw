@@ -1,0 +1,37 @@
+<header id="D_header">
+    <div class="imgWrapper">
+        <img src="<%=data.image%>">
+    </div>
+</header>
+<section class="main" onselectstart="return false">
+    <article>
+        <h1 class="title"><span><%=data.title%></span></h1>
+        <div class="quote clearFix">
+            <div class="from"><%if(data.articleType==2){%>
+                <i>转载:</i>
+                <cite><%=data.fromChannel%></cite>
+                <%}else{%>
+                <i>原创</i>
+                <%}%>
+            </div>
+
+        </div>
+        <div class="content"><%=data.context%></div>
+        <div class="quote">
+            <div >
+                <div class="count"><img class="eye" src="img/eye.png" width="15" height="10"><i><%=data.readCount+data.defaultReadCount%></i>
+                </div>
+                <div class="time"><img class="calendar_3" width="14" height="14" src="img/calendar.png">
+                    <time><%=data.timer%></time>
+                </div>
+            </div>
+        </div>
+        <address>
+            <%if(data.articleType==2&&data.isAllowReport==0){%>
+            版权归原创作者所有，转载仅作分享，如果有侵权请联系后台删除。联系方式:010-62975580
+            <%}else if(data.isAllowReport==0){%>
+            本文为智医原创，未经允许，禁止转载。转载请联系：010-62975580
+            <%}%>
+        </address>
+    </article>
+</section>

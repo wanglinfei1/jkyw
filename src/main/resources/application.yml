@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: weixin_portal
+  profiles:
+    active: @active@
+
+logging:
+  level:
+    com:
+      cloud: debug
+
+wx:
+  oauth:
+    snsapi_base:
+      - test
+      - jssdk
+      - record
+      - myselfInfor
+      - addData
+      - moreRecords
+    snsapi_userinfo:
+      -
+  oauth2-access-token:
+    - record
+    - myselfInfor
+    - addData
+    - moreRecords
+  js_sdk:
+     - record
+     - myselfInfor
+     - myName
+     - addData
+     - moreRecords
+     - knowledge
+     - articleDetails
+     - wang
+baidu_map_api: http://api.map.baidu.com/ag/coord/convert?from=2&to=4&x={longitude}&y={latitude}
+api-service-path: http://base-api-service

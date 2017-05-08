@@ -1,0 +1,50 @@
+<% dataArr.forEach(function(year){ %>
+<ul>
+    <%if(year!=nowYear&&year!=lastYear){%>
+    <li class="calendar"><img class="triangle" src="img/triangle.png" width="10" height="11"></i><%=year%></li>
+    <%}%>
+
+    <%var num=JSON.parse(dataJson)[year].length%>
+    <% JSON.parse(dataJson)[year].forEach(function(data,index){ %>
+    <li class="recordData">
+        <%if(index==0&&index==(num-1)&&year==lastYear){%>
+        <div class="time"><span><%=data.measureTime%></span><i class="quan lastDub last"></i></div>
+        <%}else if(index==0&&year==lastYear){%>
+        <div class="time"><span><%=data.measureTime%></span><i class="quan lastDub "></i></div>
+        <%}else if(index==0&&index==(num-1)){%>
+        <div class="time"><span><%=data.measureTime%></span><i class="quan first last"></i></div>
+        <%}else if(index==(num-1)){%>
+        <div class="time"><span><%=data.measureTime%></span><i class="quan last"></i></div>
+        <%}else if(index==0){%>
+        <div class="time"><span><%=data.measureTime%></span><i class="quan first "></i></div>
+        <%}else{%>
+        <div class="time"><span><%=data.measureTime%></span><i class="quan"></i></div>
+        <%}%>
+        <!--血压高低-->
+        <%if(data.sbpRange=="up"){%>
+        <div class="beyond"><span><%=data.sbp%></span><img src="img/up.png" width="8" height="14" class="arrow"></div>
+        <%}else if(data.sbpRange=="normal"){%>
+        <div class=""><span><%=data.sbp%></span></div>
+        <%}else if(data.sbpRange=="down"){%>
+        <div class="lower"><span><%=data.sbp%></span><img src="img/down.png" width="8" height="14" class="arrow"></div>
+        <%}%>
+        <!--低压高低-->
+        <%if(data.dbpRange=="up"){%>
+        <div class="beyond"><span><%=data.dbp%></span><img src="img/up.png" width="8" height="14" class="arrow"></div>
+        <%}else if(data.dbpRange=="normal"){%>
+        <div class=""><span><%=data.dbp%></span></div>
+        <%}else if(data.dbpRange=="down"){%>
+        <div class="lower"><span><%=data.dbp%></span><img src="img/down.png" width="8" height="14" class="arrow"></div>
+        <%}%>
+        <!--心率高低-->
+        <%if(data.heartRateRange=="up"){%>
+        <div class="beyond"><span><%=data.heartRate%></span><img src="img/up.png" width="8" height="14" class="arrow"></div>
+        <%}else if(data.heartRateRange=="normal"){%>
+        <div class=""><span><%=data.heartRate%></span></div>
+        <%}else if(data.heartRateRange=="down"){%>
+        <div class="lower"><span><%=data.heartRate%></span><img src="img/down.png" width="8" height="14" class="arrow"></div>
+        <%}%>
+    </li>
+    <%});%>
+</ul>
+<%});%>

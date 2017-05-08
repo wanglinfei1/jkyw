@@ -1,0 +1,43 @@
+body,
+html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+}
+.clearfix:after {
+  display: block;
+  content: '.';
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bodyW #head {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -moz-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -webkit-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+}
+.bodyW #head .title {
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #06C1AE;
+}
+.bodyW #head .title .icon-close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bodyW #head .title .icon-back {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-weight: 600;
+  font-size: 24px;
+}

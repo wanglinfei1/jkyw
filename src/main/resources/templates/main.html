@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>健科智医</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href=""/>
+</head>
+<body>
+    <div class="config" style="display: none;">
+        <span id="config-needSignature" th:text="${needSignature}"></span>
+        <span id="config-module" th:text="${module}"></span>
+        <span id="config-openid" th:text="${openid}"></span>
+        <span id="config-appId" th:text="${jsconfig}?${jsconfig.appId}"></span>
+        <span id="config-timestamp" th:text="${jsconfig}?${jsconfig.timestamp}"></span>
+        <span id="config-nonceStr" th:text="${jsconfig}?${jsconfig.nonceStr}"></span>
+        <span id="config-signature" th:text="${jsconfig}?${jsconfig.signature}"></span>
+    </div>
+    <div id="app-main" style="height:100%;overflow:auto;" class="bodyW"></div>
+    <script type="text/javascript" th:attr="data-main=@{/scripts/app.js}" th:src="@{/scripts/lib/require.js}"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+body,
+html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+}
+.clearfix:after {
+  display: block;
+  content: '.';
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.bodyW #head {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -moz-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+  -webkit-box-shadow: 0 2px 12px rgba(6, 193, 174, 0.1);
+}
+.bodyW #head .title {
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #06C1AE;
+}
+.bodyW #head .title .icon-close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bodyW #head .title .icon-back {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-weight: 600;
+  font-size: 24px;
+}
+#main .icons {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  height: 100px;
+  -webkit-box-pack: center;
+  -moz-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  color: #06C1AE;
+}
+#main .icons div {
+  text-align: center;
+  padding: 19px;
+  width: 374px;
+  font-size: 15px;
+}
+
+#main .icons div.iconRight p {
+  opacity: 0.2;
+}
+#main .icons div.iconRight span {
+  opacity: 0.4;
+}
+#main .icons div.line {
+  width: 0;
+  margin-top: 15px;
+  padding: 0;
+  position: absolute;
+  height: 74px;
+}
+#main .icons div.line:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  border-right: 1px solid #F0F0F0;
+  content: '';
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  #main .icons div.line:after {
+    -webkit-transform: scaleX(0.7);
+    -moz-transform: scaleX(0.7);
+    -ms-transform: scaleX(0.7);
+    -o-transform: scaleX(0.7);
+    transform: scaleX(0.7);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  #main .icons div.line:after {
+    -webkit-transform: scaleX(0.5);
+    -moz-transform: scaleX(0.5);
+    -ms-transform: scaleX(0.5);
+    -o-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+  }
+}
+#main .icons div span {
+  display: block;
+  padding-top: 4px;
+  line-height: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+#main .split {
+  height: 10px;
+  width: 100%;
+  background: #F5F5F5;
+}
+#main .recordCon {
+  padding: 0 12px;
+  display: none;
+}
+#main .recordCon h2 {
+  height: 50px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 50px;
+  position: relative;
+}
+#main .recordCon h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #F0F0F0;
+  content: '';
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  #main .recordCon h2:after {
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    -ms-transform: scaleY(0.7);
+    -o-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  #main .recordCon h2:after {
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+#main .recordCon h2 b {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  height: 17px;
+  width: 2px;
+  background-color: #06C1AE;
+  margin-right: 10px;
+}
+#main .recordCon h2 .titleR {
+  float: right;
+  color: #06C1AE;
+  font-size: 14px;
+}
+#main .recordCon h2 .titleR span {
+  margin-right: 8px;
+}
+#main .recordCon h2 .titleR img {
+  margin-top: -2px;
+  vertical-align: middle;
+}
+#main .recordCon .figure {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  padding-top: 10px;
+  width: 100%;
+  color: #999999;
+}
+#main .recordCon .figure li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+#main .recordCon .figure li span {
+  font-size: 15px;
+}
+#main .recordCon .date {
+  line-height: 42px;
+  height: 42px;
+  color: #BBBBBB;
+  text-align: right;
+  font-size: 14px;
+}
+#main .recordCon .date .calendar {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#main .recordCon .date span {
+  vertical-align: middle;
+}
+#main .healthAide {
+  padding: 0 12px;
+}
+#main .healthAide h2 {
+  height: 50px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 50px;
+  position: relative;
+}
+#main .healthAide h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #F0F0F0;
+  content: '';
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  #main .healthAide h2:after {
+    -webkit-transform: scaleY(0.7);
+    -moz-transform: scaleY(0.7);
+    -ms-transform: scaleY(0.7);
+    -o-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+  }
+  #main .split {
+    height: 7px;
+
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  #main .healthAide h2:after {
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+#main .healthAide h2 b {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  height: 17px;
+  width: 2px;
+  background-color: #06C1AE;
+  margin-right: 10px;
+}
+#main .healthAide h3 {
+  margin-left: 12px;
+  height: 44px;
+  line-height: 44px;
+  color: #666666;
+  font-size: 15px;
+}
+#main .healthAide .content {
+  margin-left: 12px;
+}
+#main .healthAide .content li {
+  line-height: 21px;
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 4.5px;
+}
+.weui-notification .weui-notification__handle-bar{
+  display:none;
+}
