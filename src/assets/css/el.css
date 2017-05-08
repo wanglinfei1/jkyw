@@ -1,0 +1,171 @@
+/*y 12-14*/
+/*.el-tree{
+   border:0;
+   text-align:left;
+   clear:both;
+ }*/
+.el-table__body-wrapper .el-checkbox__inner{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  border-color:#bec6d5!important;
+}
+.el-table__body-wrapper .el-checkbox__inner::after{
+  width:6px;
+  height:10px;
+  left:6px;
+  top:2px;
+}
+ .el-table__body-wrapper .el-checkbox__inner.is-checked,.el-checkbox__inner.is-indeterminate{
+   background-color:#00bab9;
+   border-color:#00bab9!important;
+ }
+.el-table__body-wrapper .el-form-item__label{
+  color:#999999;
+}
+/*弹框样式*/
+.el-dialog__body{
+  padding:37px 42px;
+}
+.el-dialog__header{
+  position: relative;
+  padding:0;
+  padding-left:28px;height:60px;line-height:60px;background:#00bab9;
+}
+.el-dialog__title{
+  padding-left: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  height: 18px;
+  color: #fff;
+  font-weight:normal;
+}
+.el-dialog__close {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  color: #c1fbff;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;font-size:14px;
+}
+
+.el-dialog__close:hover {
+  color: #fff
+}
+.el-dialog__footer{
+  padding-bottom:40px;
+}
+.dialog-footer{
+  text-align: center;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  display:flex;
+  -webkit-display:flex;
+  justify-content: center;
+}
+.dialog-footer button:nth-child(1){
+  margin-left:88px;
+}
+.el-table td, .el-table th{
+  height:50px;
+  font-size:16px;
+}
+.el-table td{
+  font-size:14px;
+}
+
+.el-dialog__body h2{
+  font-size:16px;
+  color:#666666;
+  margin-bottom:24px;
+}
+.seach {
+  width:100%;
+  height: 40px;
+  border: 1px solid #00bab9;
+  border-radius: 6px;
+  margin: 0 auto 36px auto;
+}
+
+.seach input {
+  width: 80%;
+  height: 40px;
+  background: #fff;
+  border: 0;
+  border-radius: 6px 0 0 6px;
+  padding-left: 5%;
+  font-size: 16px;
+  color: #666666;
+}
+
+.seach button {
+  width: 15%;
+  height: 40px;
+  background: #00bab9;
+  border-radius: 0 6px 6px 0;
+  border: 0;
+  float: right;
+  font-size: 16px;
+  color: #ffffff;cursor:pointer;
+}
+
+.el-table__header-wrapper th.el-table_1_column_1 .el-checkbox__inner{
+  display:none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #666;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #666;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #666;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #666;
+}
+/*树形结构/复选框*/
+.con1{
+  display:inline-block;
+  width:14px;
+  height:14px;
+  border-radius:1px;
+  border:1px solid #bec6d5;
+  margin-right:8px;
+  margin-top: 4px;
+  float: left;
+}
+.con1Active:after{
+  width:4px;
+  height:7px;
+  left:4px;
+  content: "";
+  border: 2px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  position: absolute;
+  top: 1px;
+  transform: rotate(45deg) scaleY(1);
+}
+.con1Active{
+  background:#00bab9;
+  border:1px solid #00bab9;
+  position: relative;
+}
+.item p{
+  color:#666666;
+}
+ul#tree{
+  clear:both;
+}
+ul#tree ul{
+  margin-left:40px;
+  margin-bottom:37px;
+}
+ul#tree ul li{
+  margin-right:60px;
+  float:left;
+  margin-top:27px;
+}
