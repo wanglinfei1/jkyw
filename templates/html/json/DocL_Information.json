@@ -1,0 +1,15 @@
+{
+  "title": "资讯",
+  "styles": [
+    "../css/font-awesome.min.css",
+    "../css/Docstyle.css",
+    "../css/DocL_information.css"
+  ],
+  "scripts": [
+    "../js/common/jquery.validate.js",
+    "../js/common/layer/layer.min.js",
+    "../js/common/pleaceholder.js",
+    "../js/common/Docmain.js",
+    "../js/docL_information.js"
+  ]
+}

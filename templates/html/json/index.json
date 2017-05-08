@@ -1,0 +1,9 @@
+{
+  "Navactive":"index",
+  "title": "首页",
+  "styles": [],
+  "scripts": [
+    "../js/common/pleaceholder.js",
+    "../js/index.js"
+  ]
+}

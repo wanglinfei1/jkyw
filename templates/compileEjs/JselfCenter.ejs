@@ -1,0 +1,23 @@
+<% if (data.headimg){ %>
+<img class="img" id="Img" src="../images/head-photo.png" alt="头像">
+<% } else { %>
+<img class="img" id="Img" src="<%=data.headimg%>" alt="头像">
+<% } %>
+
+    <div class="name xingming"><%=data.name%></div>
+    <div class="phone"><%=data.mobile%></div>
+    <div class="link">
+        <div class="personal-info"></div>
+        <div class="modify-password">
+            <% if(local.Navactive=="center"){ %>
+            <a class="active" href="javascript:;"><img style="margin:3px 10px;" src="../images/personal-info.png" ><span> 个人信息</span></a>
+            <a href="./Fmodify-password.html"><img style="margin:3px 10px;" src="../images/suo.png" > <span>修改密码</span></a>
+            <% } else if(local.Navactive=="password"){ %>
+            <a  href="javascript:;"><img style="margin:3px 10px;" src="../images/personal-info.png" ><span> 个人信息</span></a>
+            <a class="active" href="./Fmodify-password.html"><img style="margin:3px 10px;" src="../images/suo.png" > <span>修改密码</span></a>
+            <% } else{ %>
+            <a class="active" href="javascript:;"><img style="margin:3px 10px;" src="../images/personal-info.png" ><span> 个人信息</span></a>
+            <a href="./Fmodify-password.html"><img style="margin:3px 10px;" src="../images/suo.png" > <span>修改密码</span></a>
+            <% } %>
+        </div>
+    </div>

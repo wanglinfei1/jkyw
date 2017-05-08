@@ -1,0 +1,39 @@
+<h2><%=data.title%></h2>
+<h6 class="clearfix">
+    <div class="Jhling JhScurce">
+        <% if (data.articleType==1){ %>
+        <label>文章作者：</label>
+        <dfn><%=data.author%></dfn>
+        <% } else { %>
+        <label>文章来源：</label>
+        <dfn><%=data.fromChannel%></dfn>
+        <% } %>
+    </div>
+    <div class="Jhling JhTime">
+        <label>发布时间：</label>
+        <span><%=data.addTime%></span>
+    </div>
+    <div class="Jhling Jhnum">
+        <label>点击数：</label>
+        <% if (data.readCount!=null){ %>
+        <span><i><%=data.readCount+data.defaultReadCount%></i>次 </span>
+        <% } else { %>
+        <span><i><%=data.defaultReadCount%></i>次 </span>
+        <% } %>
+    </div>
+</h6>
+<div class="hrline">
+</div>
+<div class="JnewsText">
+    <%=data.context%>
+</div>
+
+
+
+
+
+
+
+
+
+

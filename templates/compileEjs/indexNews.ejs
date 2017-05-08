@@ -1,0 +1,29 @@
+<%data.myForEach(function(data,index){%>
+<a class="Jinfos" isId="<%=data.id%>" target="_blank" href="../html/NewsInfo.html?<%=data.id%>">
+    <dl>
+        <dt><img src="<%=data.image%>?x-oss-process=image/resize,m_fill,h_150,w_200"></dt>
+        <dd>
+            <h2><%=data.title%></h2>
+            <p><%=data.introduction%></p>
+            <b class="clearfix">
+                <i><%=data.tagNames%></i>
+                <em><%=data.updateTime%></em>
+                <% if (data.articleType==1){ %>
+                <dfn><%=data.author%></dfn>
+                <% } else { %>
+                <dfn><%=data.fromChannel%></dfn>
+                <% } %>
+            </b>
+        </dd>
+    </dl>
+</a>
+<%})%>
+
+
+
+
+
+
+
+
+

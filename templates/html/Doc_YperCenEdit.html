@@ -1,0 +1,95 @@
+<%- include('ejs/Doc_head') %>
+<body class="fixed-sidebar" >
+<div id="wrapper">
+    <%- include('ejs/Doc_header') %>
+    <%- include('ejs/Doc_nav') %>
+    <!--右侧部分开始-->
+    <div id="page-wrapper">
+      <div class="Ydoc_content Ydoc_conterEdit">
+        <div class="Ydoc_title">
+          <span>首页</span> &gt; <span>个人中心</span>
+        </div>
+        <div class="Ydoc_contentLt">
+          <form class="Ydoc_perCenForm">
+            <div class="Y_div">
+              <label class="col-sm-2 control-label" style='line-height:80px;'>头像</label>
+              <div class='Yimg_upload'>
+                <img src="../images/Doc_Yicon1.png">
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">姓名</label>
+              <div class="Y_input">
+                <p class="name"></p>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">性别</label>
+              <div class="Y_input Y_sex">
+                <input type="hidden" id="sex">
+                <label class="sex1">
+                  <input type="radio" name="sex" value="1"><i></i>男
+                </label>
+                <label class="sex2">
+                  <input type="radio" name="sex" value="2"><i></i>女
+                </label>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">手机号</label>
+              <div class="Y_input">
+                <p class="mobile"></p>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">医院</label>
+              <div class="Y_input">
+                <p class="hospitalInfo"></p>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">科室</label>
+              <div class="Y_input">
+                <p class="deptInfo"></p>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">职称</label>
+              <div class="Y_input">
+                <p class="title"></p>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label"><b class="reqStar">*</b>医院地址</label>
+              <div class="Y_input Y_tex1">
+                <textarea rows='5' cols='' id='address' name='address' required></textarea>
+                <span ><b>0</b>/50</span>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">擅长</label>
+              <div class="Y_input Y_tex2">
+                <textarea rows='7' cols='' id='skilled' name='skilled'></textarea>
+                <span><b>0</b>/100</span>
+              </div>
+            </div>
+            <div class="Y_div">
+              <label class="control-label">学术研究</label>
+              <div class="Y_input Y_tex3">
+                <textarea rows='10' cols='' id='academicResearch' name='academicResearch'></textarea>
+                <span ><b>0</b>/300</span>
+              </div>
+            </div>
+            <div class='Y_div'>
+              <button class="btn btn-primary" type="button" id="Y_btn-save">保 存</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--右侧部分结束-->
+
+</div>
+<%- include('ejs/foot') %>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%if(data.length==0){%>
+<li class="L_imgcor"><img src="../images/Docnull.png" alt=""></li>
+<%}else{%>
+    <%data.myForEach(function(data,index){%>
+    <li>
+        <i></i>
+        <p class="L_timer"><%=data.creatTime%></p>
+        <%if(data.pharmacyInstruct.length){%>
+        <div class="L_Medication">
+            <p >用药指导</p>
+            <%data.pharmacyInstruct.myForEach(function(Data,index){%>
+                <%if(index%2==0){%>
+                <span>
+            <%=Data.drugType%><%=Data.drugName%><%=Data.dose%><%=Data.unit%>,<%=Data.frequency%>;
+                </span>
+                <%}%>
+                <%if(index%2==1){%>
+                <span>
+            <%=Data.drugType%><%=Data.drugName%><%=Data.dose%><%=Data.unit%>,<%=Data.frequency%>;
+                </span><br/>
+                <%}%>
+            <%})%>
+        </div>
+        <%}%>
+        <%if(data.healthAdvice){%>
+        <div class="L_proposal">
+            <p>健康建议</p>
+            <span><%=data.healthAdvice%></span>
+        </div>
+        <%}%>
+    </li>
+    <%})%>
+<%}%>

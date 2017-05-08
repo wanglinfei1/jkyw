@@ -1,0 +1,17 @@
+{
+  "title": "",
+  "styles": [
+    "../css/jquery-ui-1.10.1.css",
+    "../css/lugo.datepicker.css",
+    "../css/pagination.css"
+  ],
+  "scripts": [
+    "../js/common/jquery-ui-1.10.1.min.js",
+    "../js/common/jquery.form.js",
+    "../js/common/datepicker.js",
+    "../js/common/ejs.min.js",
+    "../js/common/fn.js",
+    "../js/common/page.js",
+    "../js/test.js"
+  ]
+}

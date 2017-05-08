@@ -1,0 +1,13 @@
+{
+  "title": "",
+  "styles": [
+    "../css/font-awesome.min.css",
+    "../css/Y_login.css"
+  ],
+  "scripts": [
+    "../js/common/pleaceholder.js",
+    "../js/common/jquery.validate.js",
+    "../js/common/layer/layer.min.js",
+    "../js/common/Y_login.js"
+  ]
+}

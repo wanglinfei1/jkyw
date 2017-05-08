@@ -1,0 +1,10 @@
+{
+  "title": "",
+  "styles": [
+    "../css/Jstyles.css",
+    "../css/Y_login.css"
+  ],
+  "scripts": [
+    "../js/common/Y_SlowDisease.js"
+  ]
+}

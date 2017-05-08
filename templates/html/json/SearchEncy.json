@@ -1,0 +1,12 @@
+{
+  "title": "",
+  "styles": [
+    "../css/Jstyles.css",
+    "../css/pagination.css"
+  ],
+  "scripts": [
+    "../js/common/page.js",
+    "../js/SearchEncy.js",
+    "../js/common/pleaceholder.js"
+  ]
+}

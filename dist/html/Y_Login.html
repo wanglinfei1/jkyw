@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>湖南省家庭健康及慢病自我管理平台 | </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=1280" />
+    <meta name="renderer" content="webkit">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    
+
+    <link rel="stylesheet" href="../css/Y_login.css">
+
+    
+</head>
+<body>
+<div class="Y_login-warp">
+    <div class="Y_con">
+        <div class="header">
+            <img src="../images/login-icon1.png" class="logo">
+            <h1>湖南省家庭健康及慢病自我管理平台</h1>
+        </div>
+        <div class="loginWapper">
+            <section class="loginCon">
+                <div class="loginLt"><img src="../images/login-bg1.png"></div>
+                <div class="loginRt">
+                    <div class="login-nav clearfix">
+                        <a href="javaScript:;" class="user floatL active">患者</a>
+                        <span class="line"></span>
+                        <a href="javaScript:;" class="doc floatR">医生</a>
+                    </div>
+                    <!--<div class="past"></div>-->
+                    <form class="loginUpBox" id="Y_loginForm">
+                        <p style="color:red;margin-left:35px;font-size:12px;" class='ts'></p>
+                        <h4 class="phone bg">
+                            <input type="text" id="phone" name="mobile" autocomplete='off' placeholder="请填写手机号" required data-rule-phone="true">
+                            <span class="bgPhone"></span>
+                            <i></i>
+                        </h4>
+                        <h4 class="password bg">
+                            <input type="password" id="password" onfocus="this.type='password'" autocomplete='off' name="password" placeholder="请填写密码" required>
+                            <span class="bgPass"></span>
+                            <i></i>
+                        </h4>
+                        <h4 class="code">
+                            <input type="hidden" name="imgcodekey" id="imgcodekey">
+                            <input type="text" class="" id="imgCode" name="imgCode" autocomplete='off' placeholder="请填写验证码" required>
+                            <span class="bgCode"></span>
+                            <span class="span"></span>
+                        </h4>
+                        <!--<div class="autoLogin">
+                            <div class="floatL clearfix">
+                                <span class="check "></span>
+                                <span class="auto">自动登录</span>
+                            </div>
+                            <div class="floatR">
+                                <a href="javaScript:;" class="resPass">忘记密码？</a>
+                            </div>
+                        </div>-->
+                        <input type="button" value="登 录" class="btn btn_success cursor" id="Y_btn-save"/>
+                    </form>
+                    <div class="goLoginup go">
+                        <a class="login_2">手机验证码登录</a>
+                        <div class="go_bot">
+                            <p>点击<a href="../html/Y_Register.html">注册</a></p>
+                            <p><a href="javaScript:;" class="resPass">忘记密码</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!--js-->
+
+<script src="../js/common/jquery.1.11.0.min.js"></script>
+
+<script src="../js/common/Cookie.js"></script>
+
+<script src="../js/common/fn.js"></script>
+
+<script src="../js/common/ejs.min.js"></script>
+
+
+<script src="../js/common/pleaceholder.js"></script>
+
+<script src="../js/common/jquery.validate.js"></script>
+
+<script src="../js/common/layer/layer.min.js"></script>
+
+<script src="../js/common/Y_login.js"></script>
+
+</body>
+
+</html>

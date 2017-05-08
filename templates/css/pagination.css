@@ -1,0 +1,54 @@
+.pagination {
+    text-align: center
+}
+
+.pagination div {
+    display: inline-block;
+}
+
+.pagination a, .pagination i {
+    float: none;
+    cursor: pointer;
+    display: inline-block;
+    color: #ccc;
+    background-color: #fff;
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: 14px;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    margin: 0 4px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 0px #f4f1f1;
+}
+
+.pagination i {
+    cursor: text
+}
+
+.pagination a:hover, .pagination a.active {
+    background-color: #388cff;
+    border: 1px solid #388cff;
+    color: #fff
+}
+
+.JtextBar, .PageGo {
+    width: 29px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 0px #f4f1f1;
+    border-radius: 3px;
+    margin: 0 4px;
+    background: #fff;
+    text-align: center
+}
+
+.PageGo {
+    padding: 0 4px;
+    width: 22px;
+    cursor: pointer;
+    display: inline-block
+}
+

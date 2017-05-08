@@ -1,0 +1,7 @@
+{
+  "title": "健康自测",
+  "styles": ["../css/WselfRated_detail.css"],
+  "scripts": [
+    "../js/WselfRated_detail.js"
+  ]
+}

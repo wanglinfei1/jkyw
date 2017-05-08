@@ -1,0 +1,23 @@
+<%data.myForEach(function(data,index){%>
+<li>
+    <a isId="<%=data.id%>" href="../html/Y_faDoctorspar.html?<%=data.id%>">
+        <div class="Y_docListBgs">
+            <img src="<%=data.headimg%>">
+        </div>
+        <h2><%=data.name%><b> <%=data.title%></b></h2>
+        <h3><%=data.deptInfo%></h3>
+        <h4><%=data.hospitalInfo%></h4>
+        <div class="line"></div>
+        <p><%=data.skilled%></p>
+    </a>
+</li>
+<%})%>
+
+
+
+
+
+
+
+
+

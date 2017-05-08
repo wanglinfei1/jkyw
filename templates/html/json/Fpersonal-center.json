@@ -1,0 +1,10 @@
+{
+  "title": "",
+  "styles": [
+    "../css/Fpersonal-center.css"
+  ],
+  "scripts": [
+    "../js/common/fn.js",
+    "../js/Fpersonal-center.js"
+  ]
+}

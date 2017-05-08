@@ -1,0 +1,29 @@
+<div class="Jtop">
+    <p>
+        <% if (data){ %>
+        <b class="Lname"><%=data.name%></b>
+        <% } %>
+        您好，欢迎来到湖南省家庭健康及慢病自我管理平台 </p>
+    <div class="JtopR">
+
+        <% if (data){ %>
+        <a href="../html/Y_Login.html?userType=doc" class="floatL Ldoc">我是医生</a>
+        <a class="JDoctor Lperson floatL" isLogin="true" href="javaScript:;">个人中心</a>
+        <div class="Ltopleft-P floatL">
+            <% if (data.headimg){ %>
+            <img src="<%=data.headimg%>" alt="头像">
+            <% } else { %>
+            <img src='../images/head-photo.png' alt="头像">
+            <% } %>
+            <a class="Jtopleft JsignOut" href="javaScript:;">退出</a>
+        </div>
+        <% } else { %>
+        <div class="Ltopleft">
+            <a class="Jtopleft Jlogin" href="../html/Y_Login.html">登录</a>  |
+            <a class="Jtopleft Jsign" href="../html/Y_Register.html">注册</a>
+        </div>
+        <a href="../html/Y_Login.html?userType=doc" class="floatL Ldoc">我是医生</a>
+        <a class="JDoctor Lperson"  isLogin="false"  href="javaScript:;">个人中心</a>
+        <% } %>
+    </div>
+</div>

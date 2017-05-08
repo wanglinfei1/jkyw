@@ -1,0 +1,160 @@
+<%- include('ejs/head') %>
+<body>
+<%- include('ejs/header') %>
+<div class="isBodyWapper">
+  <div class="isBody">
+      <div class="JpositionNav">
+          <a href="javascript:;">首页</a> >
+          <a href="javascript:;">用药宝典</a>
+      </div>
+      <div class="Y_SlowDisWrap J_SlowDisWrap clearfix">
+          <div class="Y_slowDisLt">
+              <ul class="JinfoTab" id="jdrug">
+                  <li>
+                      <a href="javascript:;">高血压<i></i></a>
+                      <ol class="jdrugList">
+                          <li onclick="highW(this)"><a href="J_Usedrug.html?index=0">高血压危象</a></li>
+                          <li onclick="highW(this)"><a href="J_Usedrug.html?index=1">原发性高血压</a></li>
+                      </ol>
+                  </li>
+                  <li>
+                      <a href="javascript:;">冠心病<i></i></a>
+                      <ol class="jdrugList">
+                          <li  onclick="highW(this)"><a href="J_Usedrug2.html?index=0">冠状动脉粥样硬化性心脏病</a></li>
+                      </ol>
+                  </li>
+                  <li>
+                      <a href="javascript:;">脑卒中<i></i></a>
+                      <ol class="jdrugList">
+                          <li onclick="highW(this)"><a href="J_Usedrug3.html?index=0">脑出血</a></li>
+                          <li onclick="highW(this)"><a href="J_Usedrug3.html?index=1">缺血性脑血管疾病</a></li>
+                          <li onclick="highW(this)"><a href="J_Usedrug3.html?index=2">蛛网膜下腔出血</a></li>
+                          <li onclick="highW(this)"><a href="J_Usedrug3.html?index=3">短暂性脑缺血发作（TIA）</a></li>
+                          <li onclick="highW(this)"><a href="J_Usedrug3.html?index=4">脑出血（ICH）</a></li>
+                      </ol>
+                  </li>
+                  <li>
+                      <a href="javascript:;">糖尿病<i></i></a>
+                      <ol class="jdrugList">
+                          <li><a href="J_Usedrug4.html?index=0">糖尿病</a></li>
+                          <li><a href="J_Usedrug4.html?index=1">糖尿病急症</a></li>
+                      </ol>
+                  </li>
+                  <li  class="active">
+                      <a href="javascript:;">血脂异常<i></i></a>
+                      <ol class="jdrugList">
+                          <li><a href="J_Usedrug5.html?index=0">血脂异常</a></li>
+                      </ol>
+                  </li>
+              </ul>
+              <div id="module">
+                  <!--血脂异常-->
+                  <div class="Y_DrugbWrap Y_primaryHWrap">
+                      <h2><a><img src="../images/Y_primaryicon1.png" class="Y_primary_img1">血脂异常<img src="../images/Y_primaryicon1.png" class="Y_primary_img2"></a></h2>
+                      <div class="Y_DrugbCon1">
+                          <h3>推荐处方</h3>
+                          <ul class="recommendW">
+                              <li class="bigModuleW"><p><img src="../images/triangle.png">适用于胆固醇升高的高脂蛋白血症的治疗</p>
+                                  <ul class="smallW">
+                                      <li>
+                                          <ul>
+                                              <li>处方一：辛伐他汀，20mg/次，口服，1次/日。（舒降之、辛可、苏之、理舒达）</li>
+                                              <li>处方二：阿托伐他汀，10~80mg/次，口服，1次/日。（立普妥、阿乐）</li>
+                                              <li>处方三：洛伐他汀，40mg/次，口服，1次/日。（雪庆）</li>
+                                              <li>处方四：普伐他汀，20mg/次，口服，1次/日。（普拉固、美白乐镇）</li>
+                                              <li>处方五：氟伐他汀， 40mg~80/次，口服，1次/日。（来适可）</li>
+                                              <li>处方六：瑞舒伐他汀，20mg/次，口服，1次/日。（可定）</li>
+                                              <li>处方七：洛伐他汀，40mg/次，口服，1次/日。（雪庆）</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="bigModuleW"><p><img src="../images/triangle.png">适用于甘油三酯升高的高脂蛋白血症的治疗</p>
+                                  <ul class="smallW">
+                                      <li>
+                                          <ul>
+                                              <li>处方一： 非诺贝特，0.1g/次，口服，3次/日。</li>
+                                              <li>处方二： 吉非贝齐，0.6g次，口服，3次/日。</li>
+                                              <li>处方三： 苯扎贝特，0.2~0.4g/次，口服，3次/日。</li>
+                                              <li>处方四： 高纯度鱼油制剂，0.5~1.0 g/次，口服，3次/日</li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="bigModuleW"><p><img src="../images/triangle.png">适用于胆固醇和甘油三酯均显著升高的高脂蛋白血症的治疗</p>
+                                  <ul class="smallW">
+                                      <li>
+                                          <ul>
+                                              <li class="clearfix">
+                                                  <span>处方一： </span>
+                                                  <div>
+                                                      <p>（1）非诺贝特，0.1g/次，口服，3次/日；或吉非贝齐，0.6g次，口服，3次/日；或苯扎贝特，0.2~0.4g/次，口服，3次/日。</p>
+                                                      <p>（2）考来烯胺，5g/次，口服，3次/日。</p>
+                                                  </div>
+                                              </li>
+                                              <li class="clearfix">
+                                                  <span>处方二： </span>
+                                                  <div>
+                                                      <p>（1）烟酸，0.1g/次，口服，3次/日。</p>
+                                                      <p>（2）考来烯胺，5g/次，口服，3次/日。</p>
+                                                  </div>
+                                              </li>
+                                              <li class="clearfix">
+                                                  <span>处方三： </span>
+                                                  <div>
+                                                      <p>（1）辛伐他汀，20mg/次，口服，1次/日；或阿托伐他汀，10~80mg/次，口服，1次/日；或洛伐他汀，40mg/次，口服，1次/日；或普伐他汀，20mg/次，口服，1次/日；或氟伐他汀，30mg/次，口服，1次/日。</p>
+                                                      <p>（2）非诺贝特，0.1g/次，口服，3次/日；或吉非贝齐，0.6g次，口服，3次/日；或苯扎贝特，0.2~0.4g/次，口服，3次/日；或烟酸，0.1g/次，口服，3次/日。</p>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li><li class="bigModuleW"><p><img src="../images/triangle.png">适用于高脂蛋白血症的中药治疗</p>
+                              <ul class="smallW">
+                                  <li>
+                                      <ul>
+                                          <li>处方一：血脂康胶囊，成分为红曲，洛伐他汀。规格为每粒装0.3g（含洛伐他汀不少于2.5mg）。2粒/次，早、晚饭后温开水送服，2次/日。注意：活动性肝炎或无法解释的血清氨基转移酶升高者禁用。</li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                              <li class="bigModuleW"><p><img src="../images/triangle.png">对于中等强度他汀治疗胆固醇水平不达标或不耐受者的治疗</p>
+                                  <ul class="smallW">
+                                      <li>
+                                          <ul>
+                                              <li class="clearfix">
+                                                  <span>处方一： </span>
+                                                  <div>
+                                                      <p>（1）辛伐他汀，20mg/次，口服，1次/日；或阿托伐他汀，10~80mg/次，口服，1次/日；或洛伐他汀，40mg/次，口服，1次/日；或普伐他汀，20mg/次，口服，1次/日；或氟伐他汀，30mg/次，口服，1次/日。</p>
+                                                      <p>（2）依折麦布，10mg/次，口服，1次/日（益适纯）</p>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+
+                          </ul>
+                      </div>
+                      <div class="Y_DrugbCon1">
+                          <h3>注意事项</h3>
+                          <p>1.大多数人对他汀类药物的耐受性良好，副作用通常较轻且短暂。（1）肝功能异常：主要
+                              表现为转氨酶升高，发生率约0.5%~3.0%，呈剂量依赖性。血清丙氨酸氨基转移酶（ALT）和（或）天（门）冬氨酸氨基转移酶（AST）升高达正常值上限3 倍以上及合并总胆红素升高患者，应减量或停药。对于转氨酶升高在正值上限3 倍以内者，可在原剂量或减量的基础上进行观察，部分患者经此处理后转氨酶可恢复正常。失代偿性肝硬化及急性肝功能衰竭是他汀类药物应用禁忌证。（2）肌肉不良反应：包括肌痛、肌炎和横纹肌溶解。有肌肉不适和（或）无力，且连续检测肌酸激酶呈进行性升高时，应减少他汀类剂量或停药。（3）认知功能异常：但多为一过性，发生概率不高。其他不良反应还包括头痛、失眠、抑郁以及消化不良、腹泻、腹痛、恶心等消化道症状。</p>
+                          <p>2. 他汀可在任何时间段每天服用1 次，但在晚上服用时LDL-C 降低幅度可稍有增多；他汀应用取得预期疗效后应继续长期应用，如能耐受应避免停用。有研究提示，停用他汀有可能增加心血管事件的发生。如果应用他汀类后发生不良反应，可采用换用另一种他汀、减少剂量、隔日服用或换用非他汀类调脂药等方法处理。</p>
+                          <p>3.贝特类药物的常见不良反应为消化不良、胆石症等，也可引起肝脏血清酶升高和肌病。绝对禁忌证为严重的肾病和严重的肝病。</p>
+                          <p>4.降血脂药物都需要长期服用，当血脂降到接近期望水平，应适当减少用药的剂量，即应长期小剂量维持治疗，有的患者甚至要终身服药。晚上服用降脂药能获得最好的降脂疗效，可使心脑血管疾病的患病率、病死率、致残率明显降低。</p>
+                      </div>
+                  </div>
+                  <!--血脂异常 end-->
+              </div>
+          </div>
+          <div class="Y_slowDisRt">
+              <%- include('ejs/related_Articles')%>
+          </div>
+      </div>
+  </div>
+</div>
+<%- include('ejs/footer') %>
+<%- include('ejs/foot') %>
+</body>
+</html>

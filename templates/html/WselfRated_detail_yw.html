@@ -1,0 +1,617 @@
+<%- include('ejs/head') %>
+<body>
+<%- include('ejs/header') %>
+<div class="isBodyWapper">
+    <div class="isBody">
+        <div class="JpositionNav">
+            <a href="">首页</a> >
+            <a href="">健康自测</a> >
+            <a href="">心脏功能自测</a>
+        </div>
+        <div class="JnewsCont clearfix">
+            <div class="WrateDtail_wrap">
+                <div class="question">
+                    <h2 class="mainColor" id="cardiac_func">医生的降压药物用药习惯调查|Survey</h2>
+                    <h3 id='statistic'>
+                        <div><span class="mainFontColor">0</span>人已测试过</div>
+                        <div>本测试共<span class="mainFontColor" id="totalNum" data-total="15">15</span>题</div>
+                        <div>已完成<span class="mainFontColor" id="doneNum"></span>题</div>
+                        <div>还剩<span class="mainFontColor" id="leftNum"></span>题未完成</div>
+                    </h3>
+                    <!--             <div class="section sec1" data-quest="1">
+                                      <h4><span>第1题&nbsp;:</span><b>你所在地区：|What is your location?</b></h4>
+                                      <ul>
+                                          <li>
+                                              <div onclick="changeNum(1,0,this)" class="option_wrap">
+                                                  <div class="option"><span></span></div>
+                                                  从未发生
+                                              </div>0
+                                              0000
+                                          </li>
+                                          <li>
+                                              <div onclick="changeNum(1,1,this)" class="option_wrap">
+                                                  <div class="option"><span></span></div>
+                                                  偶尔发生
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div onclick="changeNum(1,3,this)" class="option_wrap">
+                                                  <div class="option"><span></span></div>
+                                                  经常发生
+                                              </div>
+                                          </li>
+                                      </ul>
+
+                                  </div>-->
+                    <div class="section sec1" data-quest="1">
+                        <h4><span>第1题&nbsp;:</span><b>您所在的医院级别是：|What is the level of the hospital you are working at?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(1,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    三级医院|Tertiary Hospital
+                                </div>
+
+                            </li>
+                            <li>
+                                <div onclick="changeNum(1,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    二级医院|Secondary Hospital
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(1,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    一级医院、社区医院|Primary hospitals
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <!--      <div class="section" data-quest="3">
+                              <h4><span>第3题&nbsp;:</span><b>您工作的科室：|Which department are you with?</b></h4>
+                              <ul>
+                                  <li>
+                                      <div onclick="changeNum(3,0,this)" class="option_wrap">
+                                          <div class="option"><span></span></div>
+                                          从未发生
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div onclick="changeNum(3,1,this)" class="option_wrap">
+                                          <div class="option"><span></span></div>
+                                          偶尔发生
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div onclick="changeNum(3,2,this)" class="option_wrap">
+                                          <div class="option"><span></span></div>
+                                          经常发生
+                                      </div>
+
+
+                                  </li>
+                              </ul>
+                              <button class="mainColor">上一题</button>
+                          </div>-->
+                    <div class="section" data-quest="2">
+                        <h4><span>第2题&nbsp;:</span><b>最近3个月内，您是否会定期出门诊：|In the past three months，have you been regularly providing outpatient service？</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(2,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是|Yes
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(2,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否|No
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="3">
+                        <h4><span>第3题&nbsp;:</span><b>您的职称是：|What is your positional title?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(3,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    主任医师|Chief physician
+                                </div>
+
+                            </li>
+                            <li>
+                                <div onclick="changeNum(3,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    副主任医师|Associate chief physician
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(3,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    主治医师|Attending physician
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(3,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    住院医师(包括在读研究生)|Resident doctor
+                                </div>
+                            </li>
+                        </ul> <button class="mainColor">上一题</button>
+
+                    </div>
+                    <div class="section" data-quest="4">
+                        <h4><span>第4题&nbsp;:</span><b>请问您的性别是：| What is your gender?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(4,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    男|Male
+                                </div>
+
+                            </li>
+                            <li>
+                                <div onclick="changeNum(4,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    女|Female
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <!--          <div class="section" data-quest="7">
+                                  <h4><span>第7题&nbsp;:</span><b>请问您的年龄是：|What is your age?</b></h4>
+                                  <ul>
+                                      <li>
+                                          <div onclick="changeNum(7,0,this)" class="option_wrap">
+                                              <div class="option"><span></span></div>
+                                              从未发生
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div onclick="changeNum(7,1,this)" class="option_wrap">
+                                              <div class="option"><span></span></div>
+                                              偶尔发生
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div onclick="changeNum(7,2,this)" class="option_wrap">
+                                              <div class="option"><span></span></div>
+                                              经常发生
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <button class="mainColor">上一题</button>
+                              </div>-->
+                    <div class="section" data-quest="5">
+                        <h4><span>第5题&nbsp;:</span><b>在临床工作中，您是否使用了高血压指南？|Do you usually consider hypertension guidelines in your clinical practices?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(5,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是|Yes
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(5,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否|No
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <!--            <div class="section" data-quest="9">
+                                    <h4><span>第9题&nbsp;:</span><b>在无药物使用禁忌症的情况下，对于高血压合并慢性肾脏病患者，从药物种类上来说，您会优选什么降压药？（第一、第二、第三优选药物之间的种类可重复）| Given no drug contraindications, which type of anti-hypertensive drug would you prefer to give patients with hypertension and chronic kidney disease?</b></h4>
+                                    <ul>
+                                        <li>
+                                            <div onclick="changeNum(9,0,this)" class="option_wrap">
+                                                <div class="option"><span></span></div>
+                                                从未发生
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div onclick="changeNum(9,1,this)" class="option_wrap">
+                                                <div class="option"><span></span></div>
+                                                偶尔发生
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div onclick="changeNum(9,2,this)" class="option_wrap">
+                                                <div class="option"><span></span></div>
+                                                经常发生
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="mainColor">上一题</button>
+                                </div>-->
+                    <div class="section" data-quest="6">
+                        <h4><span>第6题&nbsp;:</span><b>在无其他合并症的情况下，对于高血压合并慢性肾脏病患者联合降压时，您会优先选择哪种联合方案？|When there is no other complications, which combination therapies strategy do you preferred in patients with hypertension and chronic kidney disease?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ARB+ACEI|ACE inhibitors+Angiotensin receptor blockers
+
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ACEI/ARB+β受体阻滞剂|ACE inhibitors/Angiotensin receptor blockers+β-blockers
+
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ACEI/ARB+钙离子通道阻滞剂|ACE inhibitors/Angiotensin receptor blockers+ Calcium channel blockers
+                                </div>
+                            </li>
+
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    β受体阻滞剂+钙离子通道阻滞剂|β-blockers+ Calcium channel blockers
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    β受体阻滞剂+利尿剂|β-blockers+ Diuretics
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    钙离子通道阻滞剂+利尿剂|Calcium channel blockers+ Diuretics
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    其它#input#|Others
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(6,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Unknown
+                                </div>
+                            </li>
+
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="7">
+                        <h4><span>第7题&nbsp;:</span><b>在临床工作中，您一般会将高血压合并慢性肾脏病患者的血压控制在什么水平？|Which is the optimal BP target to achieve through pharmacological therapy in hypertensive and chronic kidney disease in your clinical practice ?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(7,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    125/70mmHg|125/70mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(7,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    130/80mmHg|130/80mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(7,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    135/85mmHg|135/85mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(7,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    140/90mmHg|140/90mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(7,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Unknown
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <!--          <div class="section" data-quest="12">
+                                  <h4><span>第12题&nbsp;:</span><b>在无药物使用禁忌症的情况下，对于高血压合并糖尿病患者，从药物种类上来说，您会优选什么降压药？（第一、第二、第三优选药物之间的种类可重复）|When there is no drug contraindications,which antihypertensive drugs do you preferred in patients with hypertension and diabetes?</b></h4>
+                                  <ul>
+                                      <li>
+                                          <div onclick="changeNum(12,0,this)" class="option_wrap">
+                                              <div class="option"><span></span></div>
+                                              从未发生
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div onclick="changeNum(12,1,this)" class="option_wrap">
+                                              <div class="option"><span></span></div>
+                                              偶尔发生
+
+                                          </div>
+
+                                      </li>
+                                      <li>
+                                          <div onclick="changeNum(12,2,this)" class="option_wrap">
+                                              <div class="option"><span></span></div>
+                                              经常发生
+
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <button class="mainColor">上一题</button>
+                              </div>-->
+                    <div class="section" data-quest="8">
+                        <h4><span>第8题&nbsp;:</span><b>在无其它合并症的情况下，对于高血压合并糖尿病患者联合降压治疗时，您会优先选择哪种联合方案？|Given no other complications, which combination therapies strategy would you prefer to give patients with hypertension and diabetes?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ARB+ACEI|ACE inhibitors+Angiotensin receptor blockers
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ACEI/ARB+β受体阻滞剂|ACE inhibitors/Angiotensin receptor blockers+β-blockers
+                                </div>
+
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ACEI/ARB+利尿剂|ACE inhibitors/Angiotensin receptor blockers+ Diuretics
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    ACEI/ARB+钙离子通道阻滞剂|ACE inhibitors/Angiotensin receptor blockers+ Calcium channel blockers
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    β受体阻滞剂+利尿剂|β-blockers+ Diuretics
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    β受体阻滞剂+钙离子通道阻滞剂|β-blockers+ Calcium channel blockers
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    其它#input#|Others
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(8,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Unknown
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="9">
+                        <h4><span>第9题&nbsp;:</span><b>在临床工作中，您一般会将高血压合并糖尿病患者的血压控制在什么水平？|In your clinical practice, what would you consider as the optimal BP target for pharmacological therapy for hypertensive and diabetes patients?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(9,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    125/70mmHg|125/70mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(9,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    130/80mmHg|130/80mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(9,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    135/85mmHg|135/85mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(9,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    140/90mmHg|140/90mmHg
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(9,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Unknown
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="10">
+                        <h4><span>第10题&nbsp;:</span><b>在临床工作中，您认为判断高血压患者血压是否达标的最佳方法是什么？| Which diagnostic tool would you consider as the best way to evaluate the achievement of the recommended therapeutic targets in patients with hypertension and chronic kidney disease in your clinical practice？</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(10,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    诊室血压|Clinic BP measurement
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(10,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    家庭血压|Home BP measurement
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(10,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    24小时动态血压|24-h BP measurement
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(10,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Dont konw
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="11">
+                        <h4><span>第11题&nbsp;:</span><b>在临床工作中，您认为对于高血压患者降压治疗最重要的目标是什么？|In your opinion, what is the most important target to achieve in patients with hypertension in your clinical practice?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    降低血压水平|Reduce BP levels
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    达到指南推荐血压值|Achieve the recommended BP targets
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    保护靶器官|Protect from organ damage
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    提高治疗的依从性和耐受性|Improve adherence and persistence on therapy
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    减少药物副作用和不良反应|Reduce side effects and adverse reactions
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    其它#input#|Others
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(11,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Unknown
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="12">
+                        <h4><span>第12题&nbsp;:</span><b>对于高血压患者的联合降压治疗，您倾向于选择下列哪种方式？|Which combination therapies strategy would you prefer for patients with hypertension?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(12,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    单片固定复方制剂|Fixed-dose combination
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(12,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    自由联合用药|Free-combination
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="13">
+                        <h4><span>第13题&nbsp;:</span><b>您优先选择这种联合降压方案的原因是什么？|What is the reason for your choice of anti-hypertensive drug combination strategy in your clinical practices?</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    更具有靶器官保护作用|Protect from organ damage
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    降压效果更好|Better BP reductions
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不良反应更少|Reduce side effects and adverse reactions
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    依从性更好|Improve adherence and persistence on therapy
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    选择方案种类多|More options
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    其它#input#|Others
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(13,2,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    不知道|Unknown
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor last_button">上一题</button>
+                        <button class="mainColor lastQuestion" id="submit" style="display: none">查看结果</button>
+                    </div>
+                    <div id="result" style="display: none">
+                        <h5>我的得分<i class="mainFontColor" id="score"></i>分</h5>
+                        <p class="title">评价标准</p>
+                        <ul class="evaluate">
+                            <li>自我统计总分后请评价:</li>
+                            <li>0-11分：精神压力程度偏低。但可能表示你缺乏刺激，比较简单、沉闷，个人做事动力不高。</li>
+                            <li>12-15分：精神压力程度适中。虽然某些时候感到压力较大，但仍可应付。</li>
+                            <li>16分以上：精神压力偏大。应反省一下压力来源和寻找一下解决办法。</li>
+                        </ul>
+                        <div class="evaluate_btn clearfix">
+                            <button class="mainColor" id="invite">邀请好友测试</button>
+                            <button class="mainColor last" id="retest">再测一次</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('ejs/related_Articles')%>
+        </div>
+    </div>
+</div>
+<%- include('ejs/footer') %>
+<%- include('ejs/foot') %>
+<script src="../js/common/jquery.1.11.0.min.js"></script>
+
+</body>
+</html>

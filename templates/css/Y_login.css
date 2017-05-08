@@ -1,0 +1,634 @@
+/*表单验证错误提示*/
+label.error {
+    color: #ff5f5f;
+    display: inline-block;
+    position: absolute;
+    left: 36px;
+    top: 10px;
+    font-size: 12px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.PholderSpan {
+    top: 42px !important;
+    color: #bbbbbb;
+    font-size: 14px;
+    height: 40px;
+    line-height: 2px;
+}
+
+.Y_login-warp {
+    width: 100%;
+    background: url(../images/login-bg3.png) repeat-x #fff;
+    height: 100%;
+    min-height: 666px;
+    position: relative;
+
+}
+
+.Y_con {
+    width: 742px;
+    height: 596px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -371px;
+    margin-top: -298px;
+}
+
+.Y_bg {
+    background: #388cff;
+    height: 381px;
+    width: 100%;
+}
+
+/*头部*/
+.Y_con .header {
+    width: 100%;
+    margin-bottom: 52px;
+}
+
+.Y_con .header .logo {
+    display: block;
+    float: left;
+    margin-right: 12px;
+}
+
+.Y_con .header h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+/*内容*/
+.loginWapper {
+    width: 100%;
+    height: 477px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0 20px rgba(56, 140, 255, 0.1);
+    -moz-box-shadow: 0px 0 20px rgba(56, 140, 255, 0.1);
+    -webkit-box-shadow: 0px 0 20px rgba(56, 140, 255, 0.1);
+}
+
+.loginLt {
+    float: left;
+    width: 354px;
+}
+
+.loginRt {
+    float: left;
+    margin: 46px 47px 0 47px;
+    width: 293px;
+}
+
+/*错误提示*/
+.Y_login-warp .loginRt .past {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    font-size: 12px;
+    color: red;
+}
+
+.Y_login-warp .loginRt .past.black {
+    color: #00bab9;
+}
+
+.Y_login-warp .loginRt .login-nav {
+    font-size: 20px;
+    height: 37px;
+    width: 226px;
+    margin: 0 auto;
+}
+
+.Y_login-warp .loginRt .login-nav a {
+    width: 85px;
+    text-align: center;
+    height: 37px;
+    display: inline-block;
+    color: #666666;
+}
+
+.Y_login-warp .loginRt .login-nav a.active, .Y_login-warp .loginRt .login-nav a:hover {
+    background: url(../images/login-bg2.png) no-repeat 0px 31px;
+    color: #388cff;
+}
+
+.Y_login-warp .loginRt .login-nav .line {
+    width: 1px;
+    height: 19px;
+    background: #eeeded;
+    float: left;
+    margin-left: 27px;
+    margin-top: 7px;
+}
+
+/*登陆的表单*/
+.Y_login-warp .loginRt form input {
+    color: #444444;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.Y_login-warp .loginRt form input::-webkit-input-placeholder {
+    　　color: #999;
+}
+
+.Y_login-warp .loginRt form input::-moz-placeholder {
+    　　color: #999;
+}
+.Y_login-warp .loginRt form input:-moz-placeholder {
+    　　color: #999;
+}
+
+.Y_login-warp .loginRt form input::-ms-input-placeholder {
+    　　color: #999;
+}
+
+
+
+.Y_login-warp .loginRt form h4 {
+    position: relative;
+    width: 100%;
+}
+
+.Y_login-warp .loginRt form input {
+    width: 90%; /*写给不支持calc()的浏览器*/
+    width: -moz-calc(100% - 35px);
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+    background: none;
+    padding-left: 35px;
+    margin-top: 24px;
+    line-height: 40px;
+}
+
+.Y_login-warp .loginRt form input.red {
+    border: 1px solid red;
+    display: block;
+    position: relative;
+    left: 0;
+}
+
+.Y_login-warp .loginRt form .phone .bgPhone {
+    background: url(../images/login-icon2.png) center center no-repeat;
+}
+
+.Y_login-warp .loginRt form .password .bgPass {
+    background: url(../images/login-icon3.png) center center no-repeat;
+}
+
+.Y_login-warp .loginRt form .code .bgCode {
+    background: url(../images/login-icon4.png) center center no-repeat;
+}
+
+.Y_login-warp .loginRt form .phone span, .Y_login-warp .loginRt form .password span, .Y_login-warp .loginRt form .code .bgCode {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 22px;
+    height: 24px;
+}
+
+.Y_login-warp .loginRt form .code .span {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 77px;
+    height: 33px;
+    background: #f0f0f0;
+    font-size: 12px;
+}
+
+.autoLogin {
+    margin-top: 15px;
+}
+
+.autoLogin .check, .agree .check {
+    width: 14px;
+    height: 14px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+}
+
+.autoLogin .auto {
+    float: left;
+    font-size: 12px;
+    margin-left: 7px;
+    color: #999999;
+    margin-top: -1px;
+}
+
+.Y_login-warp .loginRt form .resPass {
+    font-size: 12px;
+    color: #388cff;
+    text-decoration: underline;
+    display: block;
+}
+
+/*自动登录框*/
+.autoLogin .cho, .agree .cho {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(../images/login-checked.png) no-repeat;
+    border: 0;
+}
+
+/*注册的同意协议*/
+.agree {
+    margin-top: 16px;
+}
+
+.agree span.agreexy {
+    margin: -4px 0 0 7px;
+}
+
+.agree span {
+    float: left;
+    line-height: 22px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.agree a {
+    color: #388cff;
+}
+
+#sendCode {
+    width: 100px;
+    height: 33px;
+    background: #f0f0f0;
+    font-size: 14px;
+    color: #999999;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#sendCode.pCode {
+    background: #388cff;
+    color: #fff;
+}
+
+.Y_login-warp .loginRt form .btn_success, .Y_login-warp .loginRt form .btn-loginup {
+    width: 100%;
+    height: 40px;
+    border-radius: 19px;
+    background: #388cff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+    font-family: '微软雅黑';
+    cursor: pointer;
+}
+
+.Y_login-warp .loginRt form .btn_success:hover, .Y_login-warp .loginRt form .btn-loginup:hover {
+    background: #2174e5;
+}
+
+.Y_login-warp .loginRt .goLoginup {
+    text-align: center;
+    width: 100%;
+    margin-top: 23px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.Y_login-warp .loginRt .goLoginup a {
+    color: #388cff;
+}
+
+.Y_login-warp .loginRt form .code img {
+    float: left;
+    width: 77px;
+    height: 33px;
+}
+
+.Y_login-warp .loginRt .goLogin {
+    text-align: right;
+    width: 100%;
+    line-height: 35px;
+    margin-top: 26px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.Y_login-warp .loginRt .goLogin a {
+    color: #388cff;
+}
+
+.login_2 {
+    color: #388cff;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 31px;
+    display: block;
+}
+
+.go_bot p {
+    float: right;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.goLoginup a {
+    cursor: pointer;
+}
+
+.go_bot p a.resPass {
+    color: #bbbbbb !important;
+}
+
+.go_bot p:last-child {
+    margin-right: 22px;
+}
+
+/*验证码登录*/
+.Y_yzmlogin-wrap .login_2 {
+    margin: 24px 0 96px 0;
+}
+
+/*密码设置*/
+.Y_PasSetting-wrap .login-nav {
+    text-align: center;
+}
+
+.Y_PasSetting-wrap .login-nav h2 {
+    font-size: 20px;
+    color: #388cff;
+}
+
+.Y_PasSetting-wrap .tg {
+    text-align: right;
+    margin-top: 130px;
+}
+
+.Y_PasSetting-wrap .tg a {
+    font-size: 14px;
+    color: #388cff;
+    cursor: pointer;
+}
+
+.Y_PasSetting-wrap .btn {
+    margin-top: 38px !important;
+}
+
+/*名医更多*/
+h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+.Y_faDoctorsCon {
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Y_faDoctorsCon ul {
+    margin-bottom: 47px;
+}
+
+.Y_faDoctorsCon ul li {
+    float: left;
+    width: 237px;
+    height: 377px;
+    border-bottom: 2px solid #f6f6f6;
+    padding: 21px 25px 0 23px;
+    background: #fff;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 18px;
+}
+
+.Y_docList li:hover {
+    border-color: #388cff;
+}
+
+.Y_docList li:last-child {
+    margin-right: 0;
+}
+
+.Y_docListBgs {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f1f7ff;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Y_docListBgs img {
+    width: 100%;
+    height: 100%;
+}
+
+.Y_docList h2 {
+    font-size: 18px;
+    color: #444444;
+    margin-top: 27px;
+
+}
+
+.Y_docList h2 b {
+    font-weight: normal
+}
+
+.Y_docList h3, .Y_docList h4 {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 11px;
+}
+
+.Y_docList h4 {
+    margin-top: 20px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.line {
+    height: 1px;
+    background: #f4f4f4;
+    margin-top: 30px;
+}
+
+.Y_docList p {
+    margin-top: 23px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999999;
+    text-align: left;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    _overflow: hidden;
+    *overflow: hidden;
+    overflow: hidden \0;
+    overflow: hidden \9 \0;
+    height: 40px;
+}
+
+/*名医详情*/
+.Y_faDoctorsparCon {
+    width: 1098px;
+    height: auto;
+    background: #fff;
+    padding: 46px 52px 0 50px;
+    position: relative;
+}
+
+.Y_faDoctorsparCon dl {
+    height: 256px;
+    text-align: center;
+}
+
+.Y_faDoctorsparCon dl dt {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #f1f7ff;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Y_faDoctorsparCon dl dt img {
+    width: 100%;
+    height: 100%;
+}
+
+.Y_faDoctorsparCon dl dd {
+    margin-top: 33px;
+}
+
+.Y_faDoctorsparCon dl dd h2 {
+    font-size: 18px;
+    color: #444444;
+}
+
+.Y_faDoctorsparCon dl dd h2 span {
+    margin-right: 28px;
+}
+
+.Y_faDoctorsparCon dl dd h2 span:last-child {
+    margin-right: 0;
+}
+
+.Y_faDoctorsparCon dl dd h3 {
+    color: #777777;
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.Y_faDoctorsparBot {
+    margin-top: 51px;
+    background: url("../images/Y_myicon1.png") repeat-x bottom center;
+}
+
+.Y_faDoctorsparBot:last-child {
+    background: none;
+}
+
+.Y_faDoctorsparBot h2 {
+    color: #444444;
+    font-size: 18px;
+}
+
+.Y_faDoctorsparBot p {
+    margin-left: 17px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777777;
+    line-height: 2;
+    padding-bottom: 33px;
+}
+
+.Y_faDoctorsparBot .tit {
+    line-height: 17px;
+    font-size: 17px;
+    padding-left: 12px;
+    color: #444444;
+    border-left: 4px solid #388cff;
+}
+
+/*慢病问答*/
+.Y_SlowDisWrap {
+    width: 1200px;
+    margin-top: 22px;
+    min-height: 400px;
+}
+
+.Y_slowDisLt {
+    width: 881px;
+    float: left;
+    position: relative;
+}
+
+.Y_slowDisRt {
+    float: right;
+    width: 300px;
+}
+
+.Y_SlowDisLtcon {
+    margin-top: 15px;
+}
+
+.Y_SlowDisLtcon1 {
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 24px 21px 29px;
+}
+
+.Y_SlowDisLtcon1 h2 {
+    font-size: 16px;
+    color: #444444;
+    padding-top: 21px;
+}
+
+.Y_SlowDisLtcon1 p {
+    font-size: 14px;
+    color: #666666;
+    padding-top: 21px;
+    line-height: 2;
+    clear: both;
+}
+
+.Y_SlowDisLtcon1 h2 i, .Y_SlowDisLtcon1 p i {
+    float: left;
+    display: block;
+    font-size: 16px;
+}
+
+.Y_SlowDisLtcon1 p i {
+    line-height: 26px;
+
+}
+
+.Y_SlowDisLtcon1 h2 b, .Y_SlowDisLtcon1 p b {
+    float: left;
+    font-weight: normal;
+    width: 96%;
+}
+
+.Y_SlowDisLtcon.hide {
+    display: none;
+}
+
+
+

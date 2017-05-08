@@ -1,0 +1,516 @@
+<%- include('ejs/head') %>
+<body>
+<%- include('ejs/header') %>
+<div class="isBodyWapper">
+    <div class="isBody">
+        <div class="JpositionNav">
+            <a href="">首页</a> >
+            <a href="">健康自测</a> >
+            <a href="">自测老年痴呆的可能性</a>
+        </div>
+        <div class="JnewsCont clearfix">
+            <div class="WrateDtail_wrap">
+                <div class="question">
+                    <h2 class="mainColor" id="cardiac_func">自测老年痴呆的可能性</h2>
+                      <h3 id='statistic'>
+                          <div><span class="mainFontColor" id="peopleCount"></span>人已测试过</div>
+                          <div>本测试共<span class="mainFontColor" id="totalNum" data-total="25">25</span>题</div>
+                          <div>已完成<span class="mainFontColor" id="doneNum"></span>题</div>
+                          <div>还剩<span class="mainFontColor" id="leftNum"></span>题未完成</div>
+                      </h3>
+                    <div class="section sec1" data-quest="1">
+                         <h4><span>第1题&nbsp;:</span><b>整天和衣躺着看电视。</b></h4>
+                         <ul>
+                             <li>
+                                 <div onclick="changeNum(1,1,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     是
+                                 </div>
+                             </li>
+                             <li>
+                                 <div onclick="changeNum(1,0,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     否
+                                 </div>
+                             </li>
+                         </ul>
+
+                     </div>
+                     <div class="section" data-quest="2">
+                         <h4><span>第2题&nbsp;:</span><b>什么兴趣爱好都没有。</b></h4>
+                         <ul>
+                             <li>
+                                 <div onclick="changeNum(2,1,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     是
+                                 </div>
+
+                             </li>
+                             <li>
+                                 <div onclick="changeNum(2,0,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     否
+                                 </div>
+                             </li>
+                         </ul>
+                         <button class="mainColor">上一题</button>
+                     </div>
+                     <div class="section" data-quest="3">
+                         <h4><span>第3题&nbsp;:</span><b>没有一个可以亲密交谈的朋友。</b></h4>
+                         <ul>
+                             <li>
+                                 <div onclick="changeNum(3,1,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     是
+                                 </div>
+                             </li>
+                             <li>
+                                 <div onclick="changeNum(3,0,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     否
+                                 </div>
+                             </li>
+                         </ul>
+                         <button class="mainColor">上一题</button>
+                     </div>
+                     <div class="section" data-quest="4">
+                         <h4><span>第4题&nbsp;:</span><b>平时讨厌外出，常闷在家里。</b></h4>
+                         <ul>
+                             <li>
+                                 <div onclick="changeNum(4,1,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     是
+                                 </div>
+                             </li>
+                             <li>
+                                 <div onclick="changeNum(4,0,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     否
+                                 </div>
+                             </li>
+                         </ul>
+                         <button class="mainColor">上一题</button>
+                     </div>
+                     <div class="section" data-quest="5">
+                         <h4><span>第5题&nbsp;:</span><b>日常生活中没有属于自己干的工作或在家庭中没起什么作用</b></h4>
+                         <ul>
+                             <li>
+                                 <div onclick="changeNum(5,1,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     是
+                                 </div>
+
+                             </li>
+                             <li>
+                                 <div onclick="changeNum(5,0,this)" class="option_wrap">
+                                     <div class="option"><span></span></div>
+                                     否
+                                 </div>
+                             </li>
+                         </ul>
+                         <button class="mainColor">上一题</button>
+                     </div>
+                       <div class="section" data-quest="6">
+                           <h4><span>第6题&nbsp;:</span><b>不关心世事，不读书也不读报。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(6,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+                                   </div>
+
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(6,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="7">
+                           <h4><span>第7题&nbsp;:</span><b>觉得活着没什么意义。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(7,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+                                   </div>
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(7,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="8">
+                           <h4><span>第8题&nbsp;:</span><b>身体懒得动，无精打采。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(8,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+
+                                   </div>
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(8,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="9">
+                           <h4><span>第9题&nbsp;:</span><b>讨厌听或说开玩笑。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(9,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+
+                                   </div>
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(9,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="10">
+                           <h4><span>第10题&nbsp;:</span><b>有高血压或低血压。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(10,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+
+                                   </div>
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(10,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+
+                                   </div>
+                               </li>
+
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="11">
+                           <h4><span>第11题&nbsp;:</span><b>平时净发牢骚或埋怨。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(11,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+                                   </div>
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(11,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="12">
+                           <h4><span>第12题&nbsp;:</span><b>将“想死”做为口头禅。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(12,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+
+                                   </div>
+
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(12,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="13">
+                           <h4><span>第13题&nbsp;:</span><b>被人说成神经过敏或过分认真。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(13,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+                                   </div>
+
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(13,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                       <div class="section" data-quest="14">
+                           <h4><span>第14题&nbsp;:</span><b>经常过分忧虑。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(14,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+                                   </div>
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(14,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+                                   </div>
+                               </li>
+                           </ul>
+                           <button class="mainColor">上一题</button>
+                       </div>
+                    <div class="section" data-quest="15">
+                        <h4><span>第15题&nbsp;:</span><b>经常焦虑，易发脾气。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(15,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(15,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="16">
+                        <h4><span>第16题&nbsp;:</span><b>对任何事都不会激动，无动于衷。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(16,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(16,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="17">
+                        <h4><span>第17题&nbsp;:</span><b>什么事若非亲自动手，便不放心。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(17,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(17,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="18">
+                        <h4><span>第18题&nbsp;:</span><b>不听别人的意见，固执己见。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(18,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(18,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="19">
+                        <h4><span>第19题&nbsp;:</span><b>沉默寡言。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(19,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(19,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="20">
+                        <h4><span>第20题&nbsp;:</span><b>配偶去世5年以上。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(120,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(20,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="21">
+                        <h4><span>第21题&nbsp;:</span><b>不轻易对人说谢谢。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(21,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(21,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="22">
+                        <h4><span>第22题&nbsp;:</span><b>老讲自己过去值得自豪的事情。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(22,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(22,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="23">
+                        <h4><span>第23题&nbsp;:</span><b>对新的事物缺乏兴趣。</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(23,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(23,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                    <div class="section" data-quest="24">
+                        <h4><span>第24题&nbsp;:</span><b>啥事都以自己为中心.</b></h4>
+                        <ul>
+                            <li>
+                                <div onclick="changeNum(24,1,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    是
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="changeNum(24,0,this)" class="option_wrap">
+                                    <div class="option"><span></span></div>
+                                    否
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="mainColor">上一题</button>
+                    </div>
+                       <div class="section" data-quest="25">
+                           <h4><span>第25题&nbsp;:</span><b>对任何事情都缺乏忍耐。</b></h4>
+                           <ul>
+                               <li>
+                                   <div onclick="changeNum(25,1,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       是
+                                   </div>
+
+                               </li>
+                               <li>
+                                   <div onclick="changeNum(25,0,this)" class="option_wrap">
+                                       <div class="option"><span></span></div>
+                                       否
+                                   </div>
+
+                               </li>
+                           </ul>
+                           <button class="mainColor" id="last">上一题</button>
+                           <button class="mainColor lastQuestion" id="submit" style="display: none">查看结果</button>
+                       </div>
+                    <div id="result" style="display: none">
+                        <h5>我的得分<i class="mainFontColor" id="score"></i>分</h5>
+                        <p class="title">评价标准</p>
+                        <ul class="evaluate">
+                            <li>自我统计总分后请评价:</li>
+                            <li>如有15-25种现象相符,将来患老年痴呆的可能性极高。</li>
+                            <li>如有8-14种现象相符，患老年痴呆的可能性一般，要及时引起重视。</li>
+                            <li>如有1-7种现象符合，暂且放心，但也不能麻痹大意。</li>
+                        </ul>
+                        <div class="tip"><span>提示:</span><p>老年痴呆是指发生于老年时期的痴呆，它由于躯体或脑部病变、中毒引起的智力和行为及人格改变的脑功能失调的一种表现，最常见的症状为记忆力减退和计算能力的障碍，老年痴呆不仅危害老年人的健康和幸福，也给家庭带来极大的烦恼和困难。老年痴呆的病因尚未查明，治疗非常困难。因此，预防老年性痴呆要以预防为主，从中年开始做起，关键在于保护大脑血管，积极防治心身疾病。 积极预防脑动脉硬化及脑血栓等疾病的发生，以防止因脑供血不足而导致老年痴呆。动脉硬化是老年痴呆症的主要“敌人”。</p>
+                            <p>注意智力训练，勤动脑防痴呆。要每天坚持看书读报，写字下棋，每天除整体全身性锻炼外，还可进行30-40分钟保龄球锻炼手指。 注意维持人际关系，走出家门，积极融入社会，抛开孤独感。 加强精神调养。避免负性刺激，减轻心理负担。 起居饮食规律合理，均衡摄取各种营养素。老年人应多补充有益的矿物质微量元素及多种维生素，经常吃鱼，有助于预防老年痴呆症</p></div>
+                        <div class="evaluate_btn clearfix">
+                            <button class="mainColor" id="invite">邀请好友测试</button>
+                            <button class="mainColor last" id="retest">再测一次</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%- include('ejs/related_Articles')%>
+        </div>
+    </div>
+</div>
+<%- include('ejs/footer') %>
+<%- include('ejs/foot') %>
+<script src="../js/common/jquery.1.11.0.min.js"></script>
+
+</body>
+</html>

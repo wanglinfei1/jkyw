@@ -1,0 +1,108 @@
+.ll-skin-lugo {
+	font-size: 90%;
+}
+
+.ll-skin-lugo .ui-widget {
+	font: 400 14px/1.5 "Hiragino Sans GB","WenQuanYi Micro Hei",tahoma,sans-serif;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	-moz-box-shadow: 0 0 3px #dddfe3;
+	-webkit-box-shadow: 0 0 3px #dddfe3;
+	box-shadow: 0 0 3px #dddfe3;
+	border: 1px solid #f9f9f9;
+	border-bottom-color: #ececec;
+	border-top: none;font-weight:normal
+
+}
+
+.ll-skin-lugo .ui-datepicker {
+	padding: 0;
+}
+
+.ll-skin-lugo .ui-datepicker-header {
+
+	font-size: 80%;
+	border:none;
+	background-color: #569dff;
+	background:#569dff;
+	outline: #569dff solid 1px;
+	color: #fff; /* text color */
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 0;
+
+}
+
+.ll-skin-lugo .ui-datepicker-header .ui-state-hover {
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+}
+
+.ll-skin-lugo .ui-datepicker .ui-datepicker-next span {
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+
+.ll-skin-lugo .ui-datepicker .ui-datepicker-prev span {
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -96px -16px;
+}
+
+.ll-skin-lugo .ui-datepicker table {
+	margin: 0;
+}
+
+.ll-skin-lugo .ui-datepicker th {
+	color: #569dff;
+	font-size: 9px;
+	text-transform: uppercase;
+}
+
+.ll-skin-lugo .ui-datepicker td {
+
+	padding: 0;
+	background: #fff;
+}
+
+.ll-skin-lugo .ui-datepicker td:last-child {
+	border-right: none;
+}
+
+.ll-skin-lugo td .ui-state-default {
+	border: none;
+	text-align: center;
+	padding: .5em 0;
+	margin:0;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333; /* text color */background:#fff
+}
+.ll-skin-lugo td  .ui-state-highlight{background:#18BBAC;border-radius:50%;color:#fff}
+.ll-skin-lugo td.ui-state-disabled .ui-state-default {
+	background: #fff;
+	color: #0f0f0d;
+	text-shadow: none;
+}
+
+.ll-skin-lugo td .ui-state-hover {
+	background:#569dff;border-radius:50%;color:#fff
+}
+
+.ll-skin-lugo td .ui-state-active {
+	background:#569dff;border-radius:50%;color:#fff
+
+}
+.ui-datepicker{z-index:1000!important}
+
+.ui-datepicker-calendar thead{border-bottom:1px solid #f4f4f4}
+
+/*wnn*/
+.ui-datepicker-month option:hover{
+	background:#18BBAC;
+}
+
+
+
+

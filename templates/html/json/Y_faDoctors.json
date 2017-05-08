@@ -1,0 +1,11 @@
+{
+  "title": "",
+  "styles": [
+    "../css/Y_login.css",
+    "../css/pagination.css"
+  ],
+  "scripts": [
+    "../js/common/page.js",
+    "../js/common/Y_faDoctors.js"
+  ]
+}

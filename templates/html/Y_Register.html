@@ -1,0 +1,57 @@
+<%- include('ejs/head') %>
+<body>
+<div class="Y_login-warp">
+    <div class="Y_bg"></div>
+    <div class="Y_con">
+        <div class="header">
+                <img src="../images/login-icon1.png" class="logo">
+                <h1>湖南省家庭健康及慢病自我管理平台</h1>
+        </div>
+        <div class="loginWapper">
+            <div class="opac"></div>
+            <section class="loginCon">
+                <div class="loginLt"><img src="../images/login-bg1.png"></div>
+                    <div class="loginRt">
+                        <div class="login-nav clearfix">
+                            <a href="javaScript:;" class="user floatL active">患者</a>
+                            <span class="line"></span>
+                            <a href="../html/Y_Login.html?userType=doc" class="doc floatR">医生</a>
+                        </div>
+                        <div class="past"></div>
+                        <!--用户注册-->
+                        <form class="loginUpBox user-form" id="Y_registeredForm">
+                            <p style="color:red;margin-left:35px;font-size: 12px;" class='ts'></p>
+                            <h4 class="phone clearfix bg">
+                                <input type="text" id="phone1" name="mobile" placeholder="请填写手机号" autocomplete='off' required data-rule-phone="true">
+                                <span class="bgPhone"></span>
+                            </h4>
+                            <h4 class="code">
+                                <input type="text" class="" id="code1" name="smsCode" placeholder="请填写短信验证码" autocomplete="off" required>
+                                <span class="bgCode"></span>
+                                <span class="floatR cursor span" id="sendCode">
+                                        获取验证码
+                                </span>
+                            </h4>
+                            <h4 class="password bg">
+                                <input type="password" id="password1" name="password" placeholder="请填写密码" onfocus="this.type='password'" autocomplete='off' required data-rule-password="true">
+                                <span class="bgPass"></span>
+                            </h4>
+                            <div class="agree">
+                                <div class="floatL clearfix">
+                                    <span class="check cho cur"></span>
+                                    <span class="agreexy">我同意<a href="../html/Fuser_agreement.html" target="_blank">《用户注册协议》</a></span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-loginup btn_success submit cursor" id="registered">注册</button>
+                        </form>
+                        <div class="goLogin go">
+                            <p>已有账号，<a href="../html/Y_Login.html">马上登录</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </div>
+</div>
+<%- include('ejs/foot') %>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<% data.myForEach(function(data, index){ %>
+<tr>
+    <td class="name"><img src="<%=data.headimg%>"><%=data.memberName%></td>
+    <td><%=data.memberSex%></td>
+    <td><%=data.memberBirthday%></td>
+    <td><%= data.mobile%></td>
+    <td  class="details"  data_id="<%=data.memberId%>"style="color:#388CFF"><a href="./DocL_Information.html?userId=<%=data.memberId%>&jmenu=Doc_WpatientManage">详情</a></td>
+</tr>
+<% }) %>
+

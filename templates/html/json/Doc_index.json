@@ -1,0 +1,9 @@
+{
+  "title": "index",
+  "styles": [
+    "../css/Docstyle.css"
+  ],
+  "scripts": [
+    "../js/common/Docmain.js"
+  ]
+}

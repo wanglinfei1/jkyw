@@ -1,0 +1,371 @@
+<%- include('ejs/head') %>
+
+<body>
+<%- include('ejs/header') %>
+<div class="isBodyWapper">
+    <div class="isBody">
+        <div class="JpositionNav">
+            <a href="javascript:;">首页</a> >
+            <a href="javascript:;">用药宝典</a>
+        </div>
+        <div class="Y_SlowDisWrap J_SlowDisWrap clearfix">
+            <div class="Y_slowDisLt">
+                <ul class="JinfoTab" id="jdrug">
+                    <li class="active">
+                        <a href="javascript:;">高血压<i></i></a>
+                        <ol class="jdrugList">
+                            <li onclick="highW(this)"><a href="J_Usedrug.html?index=0">高血压危象</a></li>
+                            <li onclick="highW(this)"><a href="J_Usedrug.html?index=1">原发性高血压</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="javascript:;">冠心病<i></i></a>
+                        <ol class="jdrugList">
+                            <li  onclick="highW(this)"><a href="J_Usedrug2.html?index=0">冠状动脉粥样硬化性心脏病</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="javascript:;">脑卒中<i></i></a>
+                        <ol class="jdrugList">
+                            <li onclick="highW(this)"><a href="J_Usedrug3.html?index=0">脑出血</a></li>
+                            <li onclick="highW(this)"><a href="J_Usedrug3.html?index=1">缺血性脑血管疾病</a></li>
+                            <li onclick="highW(this)"><a href="J_Usedrug3.html?index=2">蛛网膜下腔出血</a></li>
+                            <li onclick="highW(this)"><a href="J_Usedrug3.html?index=3">短暂性脑缺血发作（TIA）</a></li>
+                            <li onclick="highW(this)"><a href="J_Usedrug3.html?index=4">脑出血（ICH）</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="javascript:;">糖尿病<i></i></a>
+                        <ol class="jdrugList">
+                            <li><a href="J_Usedrug4.html?index=0">糖尿病</a></li>
+                            <li><a href="J_Usedrug4.html?index=1">糖尿病急症</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="javascript:;">血脂异常<i></i></a>
+                        <ol class="jdrugList">
+                            <li><a href="J_Usedrug5.html?index=0">血脂异常</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <div id="module" class=" Y_primaryHWrap">
+                    <div class="Y_DrugbWrap" style="display: block">
+                        <h2><a><img src="../images/Y_primaryicon1.png" class="Y_primary_img1">高血压危象<img src="../images/Y_primaryicon1.png" class="Y_primary_img2"></a></h2>
+
+                        <div class="Y_DrugbCon1">
+                            <h3 >推荐处方</h3>
+                            <ul class="recommendW">
+                                <li class="bigModuleW"><p><img src="../images/triangle.png">适用于高血压急症的治疗</p>
+                                    <ul class="smallW">
+                                        <li>
+                                            <ul style="margin-top: 21px;">
+                                                <li>处方一： 5%葡萄糖注射液 250ml+硝普钠 50mg，持续静脉滴注，立即。开始以 10μg/min，逐渐增
+                                                    加剂量以达到降压作用。
+                                                </li>
+                                                <li>处方二： 5%葡萄糖注射液 250ml+硝酸甘油 10mg，持续静脉滴注，立即。开始以 5μg/min，逐渐
+                                                    增加剂量以达到降压作用。
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方三：</span>
+                                                    <div id="floatW">
+                                                        <p>（1）5%葡萄糖注射液 10ml+艾司洛尔 80mg，静脉注射，立即。</p>
+                                                        <p> （2）接 5%葡萄糖注射液 250ml+艾司洛尔 400mg，持续静脉滴注，立即。起始剂量为0.05mg/（kg·min），可逐渐增至0.5mg/（kg·min）。</p>
+                                                    </div>
+                                                </li>
+                                                <li>处方四： 5%葡萄糖注射液 10ml+拉贝洛尔 100mg，缓慢静脉注射，必要时每 5分钟重复 1 次，累积量＜300mg。</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Y_DrugbWrap Y_primaryHWrap" style="display: none">
+                        <h2><a><img src="../images/Y_primaryicon1.png" class="Y_primary_img1">原发性高血压<img src="../images/Y_primaryicon1.png" class="Y_primary_img2"></a></h2>
+                        
+                        <div class="Y_DrugbCon1">
+                            <h3>推荐处方</h3>
+                            <ul class="recommendW">
+                                <li class="bigModuleW"><p><img src="../images/triangle.png">适用于血压＜160/100mmHg 或低危高血压的降压初始治疗</p>
+                                    <ul class="smallW">
+                                        <li>
+                                            <ul>
+                                                <li>处方一： 利尿药，吲达帕胺，2.5mg/次，口服，1次/日。</li>
+                                                <li>处方二： CCB，如氨氯地平，5mg/次，口服，1次/日。</li>
+                                                <li>处方三： ARB，如缬沙坦，150mg/次，口服，1次/日。</li>
+                                                <li>处方四： ACEI，如贝那普利，20mg/次，口服，1 次/日。</li>
+                                                <li>处方五： β受体阻断药，如美托洛尔，12.5mg/次，口服，2 次/日。</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="bigModuleW"><p><img src="../images/triangle.png">适用于重症高血压的紧急救治</p>
+                                    <ul class="smallW">
+                                        <li>
+                                            <ul>
+                                                <li>处方一： 乌拉地尔注射液，10～50mg，缓慢静脉注射，立即。</li>
+                                                <li>处方二： 硝普钠注射液 50mg+5%葡萄糖注射液250ml，静脉滴注，立即。</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="bigModuleW"><p><img src="../images/triangle.png">适用于单药治疗不达标或血压≥160/100mmHg 或高于目标血压 20/10mmHg 的高危患者的联合治疗方案</p>
+                                    <ul class="smallW">
+                                        <li>
+                                            <p>1、二联治疗方案</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如福辛普利，20mg/次，口服，1次/日。</p>
+                                                        <p>（2）CCB，如非洛地平缓释片，5mg/次，口服，1次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1次/日。</p>
+                                                        <p>（2）利尿药，如吲达帕胺，2.5mg/次，口服，1次/日。</p>
+                                                    </div>
+                                                </li><li class="clearfix">
+                                                <span>处方三： </span>
+                                                <div>
+                                                    <p>（1）CCB，如氨氯地平，5mg/次，口服，1次/日。</p>
+                                                    <p>（2）利尿药，如吲达帕胺，2.5mg/次，口服，1次/日。</p>
+                                                </div>
+                                            </li>
+                                                <li class="clearfix">
+                                                    <span>处方四： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如福辛普利，20mg/次，口服，1次/日。</p>
+                                                        <p>（2）β受体阻断药，如比索洛尔，5mg/次，口服，1次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">处方五： 复方降压药物，如氯沙坦钾（含 50mg）/氢氯噻嗪（含 12.5mg）复方，1  片/次，口服，1 次/日。</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>2、在二联基础上，如控制不理想则可采用三联治疗处方 </p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如氨氯地平，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）利尿药，如吲达帕胺，2.5mg/次，口服，1次/日。</p>
+                                                        <p>（3）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如福辛普利，20mg/次，口服，1次/日。</p>
+                                                        <p>（3）β受体阻断药，如比索洛尔，5mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li><li class="clearfix">
+                                                <span>处方三： </span>
+                                                <div>
+                                                    <p>（1）CCB，如氨氯地平，5mg/次，口服，1次/日。</p>
+                                                    <p>（2）利尿药，如吲达帕胺，2.5mg/次，口服，1 次/日。</p>
+                                                    <p>（3）α受体阻断药，如可乐定，0.4mg/次，口服，2 次/日。</p>
+                                                </div>
+                                            </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="bigModuleW"><p><img src="../images/triangle.png">特殊人群的降压治疗</p>
+                                    <ul class="smallW">
+                                        <li>
+                                            <p>1、适用于高血压合并左心室肥厚</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如福辛普利，20mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如福辛普利，20mg/次，口服，1 次/日。</p>
+                                                        <p>（3）β受体阻断药，如比索洛尔，5mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方三： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如氨氯地平，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）利尿药，如吲达帕胺，2.5mg/次，口服，1 次/日。</p>
+                                                        <p>（3）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>2、适用于高血压合并稳定型冠心病</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如福辛普利，20mg/次，口服，1 次/日。</p>
+                                                        <p>（3）β受体阻断药，如比索洛尔，5mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如氨氯地平，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>3、适用于高血压合并心肌梗死后</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1） CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如福辛普利，20mg/次，口服，1 次/日。</p>
+                                                        <p>（3）螺内酯，20mg/次，口服，3 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</p>
+                                                        <p>（2）螺内酯，20mg/次，口服，3 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>4、适用于高血压合并心力衰竭</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如培哚普利，4mg/次，口服，1 次/日。</p>
+                                                        <p>（2）利尿药，如氢氯噻嗪，12.5mg/次，口服，1 次/日。</p>
+                                                        <p>（3）β受体阻断药，如美托洛尔，12.5mg/次，口服，2 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>5、适用于高血压合并颈动脉内中膜增厚</p>
+                                            <ul>
+                                                <li class="clearfix">处方一：  CCB，如非洛地平缓释片，5mg/次，口服，1次/日。</li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如氨氯地平，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如培哚普利，4mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>6、适用于高血压合并蛋白尿/微量白蛋白尿</p>
+                                            <ul>
+                                                <li>处方一： ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</li>
+                                                <li>处方二： ACEI，如培哚普利，4mg/次，口服，1 次/日。</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>7、适用于高血压合并肾功能不全</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</p>
+                                                        <p>（2）袢利尿药，如呋塞米，40mg/次，口服，2 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如硝苯地平控释片，60mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如福辛普利，20mg/次，口服，1 次/日。</p>
+                                                        <p>（3）袢利尿药，如呋塞米，40mg/次，口服，2 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>8、适用于老年高血压患者</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如培哚普利，4mg/次，口服，1 次/日。</p>
+                                                        <p>（3）螺内酯，20mg/次，口服，3 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">处方二：复方降压药物，如氯沙坦钾（含50mg）/氢氯噻嗪（含12.5mg）复方，1 片/次，口服，1 次/日。</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>9、适用于高血压伴糖尿病患者</p>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <span>处方一： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如缬沙坦，80mg 次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <span>处方二： </span>
+                                                    <div>
+                                                        <p>（1）ACEI/ARB，如厄贝沙坦，150mg/次，口服，1 次/日。</p>
+                                                        <p>（2）利尿药，如氢氯噻嗪，12.5mg/次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>10、适用于高血压伴血脂异常</p>
+                                            <ul>
+                                                <li class="clearfix">处方一：ACEI，如培哚普利，4mg/次，口服，1 次/日。</li>
+                                                <li class="clearfix">处方二：ARB，如缬沙坦，80mg 次，口服，1 次/日。</li>
+                                                <li class="clearfix">
+                                                    <span>处方三： </span>
+                                                    <div>
+                                                        <p>（1）CCB，如非洛地平缓释片，5mg/次，口服，1 次/日。</p>
+                                                        <p>（2）ACEI/ARB，如缬沙坦，80mg 次，口服，1 次/日。</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Y_DrugbCon1">
+                            <h3>注意事项</h3>
+                            <p>1. 高血压的降压目标不尽相同</p><p>	首先一般高血压患者降压治疗的血压目标为＜140/90mmHg；老年人的血压目标为＜150/90mmHg；慢性肾病的血压目标为＜130/80mmHg，终末期肾病为＜140/90mmHg；稳定型冠心病的血压目标为＜130/80mmHg，但冠状动脉严重狭窄者适当放宽；糖尿病的血压目标为＜130/80mmHg。有关高血压治疗的血压低限值尚未确定，但严重冠脉病变或高龄患者舒张压低于60mmHg者应当谨慎降压。应明确不同的高血压患者其降压治疗的血压目标不同，并且应根据患者的耐受性，逐步降压达标。</p>
+                            <p>2.高血压降压治疗的基本原则</p><p>	多年的抗高血压药物治疗研究和应用中归纳出抗高血压药物治疗应遵循4个基本原则，即小剂量开始、优先选择长效制剂、联合应用及个体化。</p>
+                            <p>3.关于β受体阻断药的争议</p><p>美国成人高血压指南（JNC8）以及英国高血压指南均未推荐β受体阻断药用于高血压患者的初始治疗。但Marphy等研究证实美托洛尔治疗高血压患者可降低病死率，减少猝死。β受体阻断药适用于伴快速性心律失常、冠心病、慢性心力衰竭、交感神经活性增高以及高动力状态的高血压患者。我国高血压防治指南仍将β受体阻断药列为一线用药。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Y_slowDisRt">
+                <%- include('ejs/related_Articles')%>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('ejs/footer') %>
+<%- include('ejs/foot') %>
+</body>
+</html>

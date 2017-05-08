@@ -1,0 +1,112 @@
+<%- include('ejs/head') %>
+<!--<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>修改信息</title>
+  <link rel="stylesheet" href="./css/modify-info.css">
+</head>-->
+<body>
+<%- include('ejs/header') %>
+<div class="fmain-bg">
+  <div class="fmain">
+    <div class="ftitle">
+      <span>首页</span> &gt; <span>个人中心</span>
+    </div>
+    <div class="content clear">
+
+      <!--左边区域-->
+      <div class="fpull-left">
+        <img class="img" id="Img" src="../images/head-photo.png" alt="头像">
+        <div class="name xingming"></div>
+        <div class="phone"></div>
+        <div class="link">
+          <div class="personal-info"></div>
+          <div class="modify-password">
+            <a class="active" href="javascript:;"><img style="margin:3px 10px;" src="../images/personal-info.png" ><span>个人信息</span></a>
+            <a href="../html/Fmodify-password.html"><img style="margin:3px 10px;" src="../images/suo.png" ><span>设置密码</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!--右边区域-->
+      <div class="fpull-right">
+        <h3><i></i> 编辑个人信息</h3>
+        <div class="container">
+          <form class="F_form">
+          <div class="clear head">
+            <div class="fpull-left left" ><p id="head">头像:</p></div>
+            <div class="right fpull-left clear">
+              <img class="fpull-left img" src="../images/head-photo.png">
+              <a href="javascript:;" class="pull-right" id="cun">保存</a>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="left fpull-left">
+              姓名：
+            </div>
+            <div class="right fpull-left clear fj" >
+              <input class="fpull-left name" type="text" id="username" name="username" value="" required> <span class="fpull-left" id="yz-username">*</span>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="left fpull-left ">
+              性别：
+            </div>
+            <div class="clear right fpull-left Y_input Y_sex" id="sex">
+              <div class="fpull-left ">
+                <label  class="sex1 margin0"> <input id="sex1" type="radio" value="1" class="Jsex" name="sex" /> <i></i> 男</label>
+                <label  class="sex2"><input id="sex2" type="radio" value="2" class="Jsex" name="sex" /><i></i>  女</label>
+              </div>
+              <input type="text" name="sex1" id="JSelsex" required />
+              <span class="fpull-left" id="yz-checkd">*</span>
+            </div>
+
+          </div>
+          <div class="clear">
+            <div class="left fpull-left">
+              手机号：
+            </div>
+            <div class="right fpull-left clear fj">
+              <input class="fpull-left asdphone" type="text" id="dsdphone" value="" name="dsdphone" disabled/> <span class="fpull-left" id="yz-phone1" >*</span>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="left fpull-left ">
+              身份证号：
+            </div>
+            <div class="right fpull-left clear fj L_ID">
+              <input class="fpull-left identity" type="text" id="ID" name="ID" value="">
+              <span class="IDError"></span>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="left fpull-left">
+              出生日期：
+            </div>
+            <div class="right fpull-left clear fj">
+              <input class="fpull-left data acc" type="text" id="day" value="" name="birthday" required onkeypress="javascript:return false" readonly="readonly"> <span class="fpull-left" id="yz-day">*</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="left fpull-left">
+              地址：
+            </div>
+            <div class="right fpull-left clear fj">
+              <textarea class="pull-left" id="address" name="address" ></textarea><span class="pull-left" id="yz-address"></span>
+            </div>
+          </div>
+         </form>
+    </div>
+  </div>
+      <!--end-->
+    </div>
+  </div>
+</div>
+<%- include('ejs/footer') %>
+<%- include('ejs/foot') %>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<%- include('ejs/Doc_head') %>
+<body class="fixed-sidebar" >
+<div id="wrapper">
+        <%- include('ejs/Doc_header') %>
+        <%- include('ejs/Doc_nav') %>
+        <!--右侧部分开始-->
+        <div  id="page-wrapper">
+            <div class="Ydoc_content">
+                <div class="Ydoc_title">
+                    <span>首页</span> &gt; <span>个人中心</span>
+                </div>
+                <div class="Ydoc_contentLt">
+                    <a class="Ydoc_bjbtn Ybtn" href="../html/Doc_YperCenEdit.html?title=2&jmenu=Doc_YpersonalCenter"> 编辑 </a>
+                    <form class="Ydoc_perCenForm">
+                        <div class="Y_div clearfix">
+                            <label class="col-sm-2 control-label" style='line-height:94px;'>头像</label>
+                            <div class='Yimg_upload'>
+                                <img src="../images/Doc_Yicon1.png">
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">姓名</label>
+                            <div class="Y_input">
+                                <p class="name"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">性别</label>
+                            <div class="Y_input">
+                                <p class="sex"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">手机号</label>
+                            <div class="Y_input">
+                                <p class="mobile"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">医院</label>
+                            <div class="Y_input">
+                                <p class="hospitalInfo"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">科室</label>
+                            <div class="Y_input">
+                                <p class="deptInfo"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div">
+                            <label class="control-label">职称</label>
+                            <div class="Y_input">
+                                <p class="title">主任医师</p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">医院地址</label>
+                            <div class="Y_input">
+                                <p class="address"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">擅长</label>
+                            <div class="Y_input">
+                                <p class="skilled"></p>
+                            </div>
+                        </div>
+                        <div class="Y_div clearfix">
+                            <label class="control-label">学术研究</label>
+                            <div class="Y_input">
+                                <p class="academicResearch"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--右侧部分结束-->
+</div>
+<%- include('ejs/foot') %>
+</body>
+</html>
