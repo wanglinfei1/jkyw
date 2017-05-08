@@ -1,25 +1,17 @@
 {
-  "name": "server",
+  "name": "glup",
   "version": "1.0.0",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser":"1.17.1",
-    "express":"4.15.2",
-    "sha-1":"0.1.1",
-    "request":"2.81.0",
-    "connect-multiparty":"2.0.0"
-  },
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
   "devDependencies": {
-    "body-parser":"1.17.1",
-    "express":"4.15.2",
-    "sha-1":"0.1.1",
-    "request":"2.81.0",
-    "connect-multiparty":"2.0.0"
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^3.0.0",
+    "gulp-watch": "^4.3.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "description": " "
+  "license": "ISC"
 }

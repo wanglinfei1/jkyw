@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>健科互联网医疗服务平台</title>
+    <meta name="keywords" content="your tags"/>
+    <meta name="description" content="150 words"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/personalCenter.css">
+    <!--聊天所用-->
+    <style>
+        .Jwapbox {
+            padding: 23px 0 80px 0;
+            width: 1002px;
+            margin: 0 auto;
+        }
+
+        .chat {
+            height: 50px;
+            background: #f9ffff;
+            line-height: 50px;
+            border-left: 4px solid #00bab9;
+            padding-left: 16px;
+            width: 984px;
+            margin: 0 auto 30px auto;
+            font-size: 16px;
+        }
+
+        .chat-box {
+            position: relative;
+            width: 918px;
+            margin: 0 auto;
+            height: 820px;
+            border: 1px solid #f1f1f1;
+            border-radius: 4px;
+            background: #fdfdfd;
+        }
+
+        #chatTitle {
+            background: #fdfdfd;
+            border: 0;
+            margin: 0;
+        }
+
+        #chatTitle h3 {
+            height: 55px;
+            background: #f3f3f3;
+            line-height: 55px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: normal;
+            color:#00bab9;
+        }
+
+        #chatTitle p {
+            position: absolute;
+            line-height: 32px;
+            width: 68px;
+            height: 32px;
+            right: 10px;
+            top: 12px;
+            cursor: pointer;
+            background: #00bab9;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        #chatContent {
+            position: absolute;
+            width:882px;
+            border: 1px solid white;
+        }
+
+        #chatEditor {
+            position: absolute;
+            background: #f4f4f4;
+            width: 830px;
+            border-radius: 4px;
+            left: 40px;
+            height: 163px;
+            border: 1px solid #f4f4f4;
+        }
+
+        .u-emoji {
+            position: absolute;
+            top: 2px;
+            left: 24px;
+            width: 30px;
+            height: 30px;
+            background: url(../../css/chat_images/icons.png) no-repeat center;
+            background-position: 2px -187px;
+            cursor: pointer;
+        }
+
+        .msg-type {
+            position: absolute;
+            left: 27px;
+        }
+
+        .icon-file {
+            display: inline-block;
+            margin-top: 5px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            background: url(../../css/chat_images/icons.png) -35px -78px no-repeat;
+        }
+
+        #uploadFile {
+            display: block;
+        }
+
+        #messageText {
+            height: 101px;
+            margin-top: 34px;
+            width: 94%;
+            border-radius: 0 0 4px 4px;
+            border: none;
+            outline: none;
+            padding: 14px 3%;
+            font-size: 14px;
+            background: #ffffff;
+            resize: none;
+        }
+
+        .btn-send {
+            background-color: #00bab9;
+            color: #fff;
+            display: inline-block;
+            width: 70px;
+            height: 34px;
+            line-height: 36px;
+            text-align: center;
+            position: absolute;
+            bottom: 17px;
+            right: 15px;
+            font-size: 12px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #chatTitle p:hover, .btn-send:hover {
+            background-color: #0ca6a5;
+        }
+        #time{
+            color: #a6a6a6;
+        }
+        #message{
+            position: relative;
+            margin-top:6px;
+            width:519px;
+            margin-bottom:10px;
+        }
+        #message:before,#message:after{
+            display: block;
+            content: '';
+            height:0;
+            clear: both;
+            visibility: hidden;
+        }
+        .ulR{
+            padding-right:57px;
+            text-align: right;
+        }
+        .ulL{
+            padding-left:57px;
+            text-align: left;
+        }
+        .ulL #msg{
+            background: #ffffff;
+        }
+        .ulR li{
+            text-align:right;
+        }
+
+
+        #pic {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top:33px;
+        }
+
+        .ulR #pic {
+            right:10px;
+        }
+
+        .ulL #pic {
+            left: 10px;
+        }
+
+        #msg{
+            display: inline-block;
+            background: #e8fefe;
+            max-width:518px;
+            padding:13px 20px;
+            margin-top:16px;
+            border:1px solid #f7f7f7;
+            border-radius: 5px;
+        }
+        #msg span{
+            display: inline-block;
+            text-align: left;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        #wrapChat{
+            position: relative;
+            height: 550px;
+            padding: 0 18px;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        #uploadForm{
+            position: absolute;
+            z-index: 5;
+            left:27px;
+            top:-6px;
+            opacity: 0;
+
+        }
+        #uploadForm input{
+            display: inline-block;
+            width:25px;
+            height:25px;
+            font-size: 0;
+            cursor: pointer;
+
+        }
+        #showEmoji{
+            display: none;
+        }
+        #chatEditor h4{
+            position: absolute;
+            display: none;
+            top: 8px;
+            left: 45%;
+            color: #4277e1;
+            /*width: 125px;*/
+        }
+        html, body,.wapper{
+            background:#ffffff;
+        }
+        .footernav{
+            height:20px;
+            background:#f9f9f9;
+        }
+        .bottomWapper{background:#f9f9f9;margin-top:0;}
+        .Bline h4{
+            background:#f9f9f9;
+        }
+        .link h6{
+            background:#ffffff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wapper">
+    <div class="topWapper">
+    <div class="top clearfix">
+        <p><i></i>  您好，欢迎来到健科互联网医疗服务平台！</p>
+        <div class="topR">
+            <h5 class="topr1"><a href="../webPage/login.html">登录</a> | <a href="../webPage/loginUp.html">注册</a></h5>
+            <a href="javaScript:;" class="topr1 Jlogin">我是医生</a>
+            <a class="topr1 topr2" href="javaScript:;">个人中心</a>
+        </div>
+    </div>
+</div>
+<div class="logoW clearfix">
+    <div class="logo">
+        <a href="/index.html"><img src="../../img/logo.png"/></a>
+    </div>
+</div>
+<div class="navW clearfix">
+    <ul class="nav">
+        <li class="active"><a href="/index.html?navActive=0">首页</a></li>
+        <li><a href="../webPage/OnlineVisits.html?navActive=1">在线咨询</a></li>
+        <li><a href="../webPage/onlineBooking.html?navActive=2">在线预约</a></li>
+        <li><a href="javaScript:;">精准预约</a></li>
+        <li><a href="../webPage/commonDiseases.html?navActive=4">常见疾病</a></li>
+        <li><a href="../webPage/qd.html?navActive=5">会诊中心</a></li>
+        <li><a href="../webPage/qd.html?navActive=6">眩晕课堂</a></li>
+        <li><a href="../webPage/qd.html?navActive=7">医生园地</a></li>
+    </ul>
+</div>
+    <!--聊天内容-->
+    <div class="wrapper box-sizing Jwapbox">
+        <h1 class="chat">聊天</h1>
+        <div class="chat-box">
+            <div class="title" id="chatTitle">
+                <h3></h3>
+                <p id="getHistoryBtn" style="display: none">历史消息</p>
+            </div>
+            <div id="wrapChat">
+                <div class="chat-content box-sizing" id="chatContent"></div>
+            </div>
+            <div class="chat-editor box-sizing" id="chatEditor" data-disabled="1">
+                <h4>图片正在上传中……</h4>
+                <div id="emojiTag" class="m-emojiTag"></div>
+                <a class="u-emoji" id="showEmoji"></a>
+                <span class="msg-type" id="chooseFileBtn">
+							<a class="icon icon-file" data-type="file"></a>
+						</span>
+                <form action="#" id="uploadForm">
+                    <input type="file" name="fileInput" id="uploadFile"/>
+                </form>
+                <textarea id="messageText" class="msg-input box-sizing radius5px" rows="1" autofocus="autofocus"
+                          maxlength="500"></textarea>
+                <a class="btn-send radius5px" id="sendBtn">发送</a>
+            </div>
+        </div>
+        <!-- 云记录 -->
+        <div class="cloud-msg-container hide" id="cloudMsgContainer"></div>
+
+    </div>
+    <div class="footernav"></div>
+<div class="bottomWapper">
+    <div class="bottom">
+        <div class="Bline">
+            <h4>合作伙伴<span>cooperative partner</span></h4>
+        </div>
+        <div class="link clearfix">
+            <h6><a href="http://www.zmxybyjs.com/"><img src="../../img/link1.png" />武警部队眩晕病研究所</a></h6>
+            <h6><a href="http://www.xizhengxuanyun.com/"><img src="../../img/link2.png" />北京希征国际眩晕医学研究院</a></h6>
+            <h6><a href="http://guojixuanyun.com/"><img src="../../img/link3.png" /></a></h6>
+        </div>
+    </div>
+</div>
+<div class="fotter">
+    <p>Copyright © 2000-2014 xy.cloudh.net.cn. All rights reserved.   版权所有 北京健科云网科技有限公司  备案号申请中</p>
+    <p>地址：北京市海淀区上地东路35号颐泉汇628   网站信息仅供参考，不能作为诊断及医疗的依据，就医请遵照医生诊断</p>
+</div>
+
+</div>
+<script src="../../js/common/jquery.1.11.0.min.js"></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/im/NIM_Web_NIM_v3.3.0.js"></script>
+<!--<script src="js/iscroll-5.1.3.min.js"></script>-->
+<script src="../../js/PersonalCenter/chatW.js"></script>
+<script>
+    $('.logo').on('click',function(){
+        if(userType==0){
+            window.location="/index.html";
+        }
+    });
+    if(!JSON.parse(localStorage.getItem("loginData"))){
+        window.location="../webPage/login.html";
+    }
+</script>
+</body>
+</html>

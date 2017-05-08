@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>健科互联网医疗服务平台</title>
+    <meta name="keywords" content="your tags" />
+    <meta name="description" content="150 words" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/detailPhone.css"/>
+    <link rel="stylesheet" href="../../css/popupWindow.css">
+    <style>
+        .loading{
+            margin-top:-160px;
+        }
+        .detail .imgWa b{
+            width: 29px;
+            height: 30px;
+            background: url(../../img/ico.png) no-repeat -56px -245px;
+            position: absolute;
+            bottom: 0;
+            right: 45px;
+            display: none;
+        }
+        html, body,.wapper{
+            background:#ffffff;
+        }
+        .footernav{
+            height:20px;
+            background:#f9f9f9;
+        }
+        .bottomWapper{background:#f9f9f9;margin-top:0;}
+        .Bline h4{
+            background:#f9f9f9;
+        }
+        .link h6{
+            background:#ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="wapper">
+    <div class="topWapper">
+    <div class="top clearfix">
+        <p><i></i>  您好，欢迎来到健科互联网医疗服务平台！</p>
+        <div class="topR">
+            <h5 class="topr1"><a href="../webPage/login.html">登录</a> | <a href="../webPage/loginUp.html">注册</a></h5>
+            <a href="javaScript:;" class="topr1 Jlogin">我是医生</a>
+            <a class="topr1 topr2" href="javaScript:;">个人中心</a>
+        </div>
+    </div>
+</div>
+<div class="logoW clearfix">
+    <div class="logo">
+        <a href="/index.html"><img src="../../img/logo.png" /></a>
+        <div class="search floatL">
+            <input type="text" class="floatL input1" placeholder="请输入科室名或医生名">
+            <i class="tubiao"></i>
+            <input type="button" value="搜索" class="floatL input2 cursor">
+        </div>
+    </div>
+</div>
+<div class="navW clearfix">
+    <ul class="nav">
+        <li class="active"><a href="/index.html?navActive=0">首页</a></li>
+        <li><a href="../webPage/OnlineVisits.html?navActive=1">在线咨询</a></li>
+        <li><a href="../webPage/onlineBooking.html?navActive=2">在线预约</a></li>
+        <li><a href="javaScript:;">精准预约</a></li>
+        <li><a href="../webPage/commonDiseases.html?navActive=4">常见疾病</a></li>
+        <li><a href="../webPage/qd.html?navActive=5">会诊中心</a></li>
+        <li><a href="../webPage/qd.html?navActive=6">眩晕课堂</a></li>
+        <li><a href="../webPage/qd.html?navActive=7">医生园地</a></li>
+    </ul>
+</div>
+    <div class="detail">
+        <div class="info clearfix">
+            <div class="imgWa floatL info-l">
+                <div class="docImage">
+                </div>
+                <b></b>
+            </div>
+            <div class="info-r floatL">
+            </div>
+        </div>
+        <p class="prompt">
+            温馨提示：想要得到专业医生的详细指导，需要符合要求的病情资料！请按提示提交疾病信息！
+        </p>
+    </div>
+    <div class="conditionData">
+        <h3 class="tit">病情资料</h3>
+        <div class="infor">
+            <div class="visit clearfix">
+                <span class="floatL">咨询人</span>
+                <i class="floatL"></i>
+            </div>
+            <div class="phone clearfix input">
+                <span class="floatL"><b class="floatL">*</b>接听电话</span>
+                <input type="text" placeholder="请输入方便接听的电话号码" class="floatL active" id="phoneNumber">
+                <p class="floatL'">请在预约前保持电话畅通</p>
+                <i class="red">请输入正确的电话号码</i>
+            </div>
+            <div class="phone clearfix input">
+                <span class="floatL"><b class="floatL">*</b>接听时间</span>
+                <div class="floatL timer timer1">
+                    <input type="text" placeholder="请选择日期" class="floatL" data_id="btn" onkeypress="javascript:return false" readonly="readonly">
+                    <i class="triangle"></i>
+                    <div class="scrollBar" style="height: 160px;">
+                        <ul id="scroll">
+                            <li>请选择</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="phone clearfix input">
+                <span class="floatL">咨询疾病</span>
+                <input type="text" placeholder="未确诊可不填写" class="floatL" maxlength="30" id="disease">
+            </div>
+            <div class="disease clearfix input ">
+                <span class="floatL"><b class="floatL">*</b>疾病详情</span>
+                <textarea maxlength="300" placeholder="详细的疾病描述将得到更专业的咨询指导"></textarea>
+                <span class="pas"><i>0</i>/300</span>
+                <i class="red" style="bottom:-15px">请输入不低于15个字的疾病描述</i>
+            </div>
+            <div class="disease clearfix input phone">
+                <span class="floatL">图片添加</span>
+                <div class="floatL upPic">
+                    <p>病症部位、检查报告单、诊断报告单以及病历等其他病情资料（请保持图片清晰，共可上传9张）</p>
+                    <img src="" alt="" class="fixImage">
+                    <div class="pic clearfix">
+                        <div id="add" class="floatL">
+                            +
+                            <form id= "uploadForm">
+                                <input type="file" name="file" onchange="submitW()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="butt">
+                <span></span>
+                <input type="button" value="提交咨询" style="padding-left: 0" class="submit cursor blue">
+            </div>
+        </div>
+    </div>
+    <div class="footernav"></div>
+<div class="bottomWapper">
+    <div class="bottom">
+        <div class="Bline">
+            <h4>合作伙伴<span>cooperative partner</span></h4>
+        </div>
+        <div class="link clearfix">
+            <h6><a href="http://www.zmxybyjs.com/"><img src="../../img/link1.png" />武警部队眩晕病研究所</a></h6>
+            <h6><a href="http://www.xizhengxuanyun.com/"><img src="../../img/link2.png" />北京希征国际眩晕医学研究院</a></h6>
+            <h6><a href="http://guojixuanyun.com/"><img src="../../img/link3.png" /></a></h6>
+        </div>
+    </div>
+</div>
+<div class="fotter">
+    <p>Copyright © 2000-2014 xy.cloudh.net.cn. All rights reserved.   版权所有 北京健科云网科技有限公司  备案号申请中</p>
+    <p>地址：北京市海淀区上地东路35号颐泉汇628   网站信息仅供参考，不能作为诊断及医疗的依据，就医请遵照医生诊断</p>
+</div>
+</div>
+<!--弹窗-->
+<div class="popup">
+    <div class="popup-in">
+        <a href="javaScript:;" class="close"></a>
+        <span class="confirm"></span>
+        <p class="success">您的电话咨询资料已经提交成功！</p>
+        <div class="prompt">
+            <p class="p2">温馨提示</p>
+            <p class="p2">1、您可以到<a href="../personalCenter/index-1.html">“个人中心”</a>-<a href="../personalCenter/Myonline.html">“我的在线咨询”</a>中查看您的预约记录</p>
+        </div>
+    </div>
+</div>
+<script  src="../../js/common/jquery.1.11.0.min.js" ></script>
+<script src="../../js/common/jquery.form.js"></script>
+<script  src="../../js/common/common.js" ></script>
+<script src="../../js/common/popupWindow.js"></script>
+<script src="../../js/webPage/detailPhoneW.js"></script>
+<script src="../../js/common/pleaceholder-1.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>健科互联网医疗服务平台</title>
+<meta name="keywords" content="your tags" />
+<meta name="description" content="150 words" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/perfect.css">
+    <link href="../../css/jquery-ui-1.10.1.css" rel="stylesheet">
+    <link href="../../css/lugo.datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/detailPhone.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/docDetails.css"/>
+    <link rel="stylesheet" href="../../css/perfect.css">
+    <link rel="stylesheet" type="text/css" href="../../css/my.css"/>
+    <style>
+        .serveList span {
+            position: relative;
+        }
+        html, body,.wapper{
+            background:#ffffff;
+        }
+        .footernav{
+            height:20px;
+            background:#f9f9f9;
+        }
+        .bottomWapper{background:#f9f9f9;margin-top:0;}
+        .Bline h4{
+            background:#f9f9f9;
+        }
+        .link h6{
+            background:#ffffff;
+        }
+        .sameList{
+            width:1000px;
+        }
+    </style>
+</head>
+<body>
+<div class="wapper">
+    <%- include('../ejs/header') %>
+    <div class="detail">
+        <div class="info clearfix">
+            <div class="imgWa floatL info-l">
+                <div class="docImage Top hosImage">
+                </div>
+                <b></b>
+            </div>
+            <div class="info-r floatL">
+            </div>
+        </div>
+    </div>
+    <div class="conditionData">
+        <ul class="HospitalCon">
+            <li><a href="HospitalIntroduced.html?navActive=1" target="_blank">医院介绍</a></li>
+            <li class="active"><a href="javaScript:;">科室介绍</a></li>
+        </ul>
+        <!--<h3 class="tit">科室介绍</h3>-->
+        <div class="Department-con">
+            <div class="mainW conditionData">
+                <div class="main">
+                    <h3 class="tit departementTilte"></h3>
+                    <p class="departementCon"></p>
+                </div>
+                <div class="same">
+                    <div class="sameTop clearfix">
+                        <h2 class="floatL">科室医生</h2>
+                        <a href="javaScript:;" class="more floatR">更多 >></a>
+                    </div>
+                    <div class="sameList" id="sameList">
+                        <ul class="sameList clearfix">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('../ejs/footer') %>
+</div>
+<!--完善个人信息弹窗-->
+<%- include('../ejs/perfect') %>
+<script  src="../../js/common/jquery.1.11.0.min.js" ></script>
+<script src="../../js/common/jquery-ui-1.10.1.min.js"></script>
+<script  src="../../js/common/main.js" ></script>
+<script src="../../js/common/common.js"></script>
+<script src="../../js/common/popupWindow.js"></script>
+<script src="../../js/common/initialCalendar.js"></script>
+<script src="../../js/webPage/DepartmentXq.js"></script>
+</body>
+</html>
